@@ -1,0 +1,27 @@
+.bodyc
+{
+    background-color:dimgrey;
+}
+.foot
+{
+    position: absolute;
+    bottom: 1px;
+}
+.whatiscm
+{
+    color: white;
+    width: 400px;
+    position: relative;
+    left: 900px;
+    top: 500px;
+}
+.titlewhatiscm
+{
+    
+}
+.icon1
+{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
