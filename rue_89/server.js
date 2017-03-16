@@ -1,19 +1,30 @@
-// Use strict mode
-'use strict';
-
-// Load usefull expressjs and nodejs objects / modules
 var express = require('express');
-var path = require('path');
-
 var app = express();
+var sqlite3 = require("sqlite3").verbose();
 
-// Minimum routing: serve static content from the html directory
-app.use(express.static(path.join(__dirname, 'public')));
+var fs = require("fs");
+var file = "base.db";
+var exists = fs.existsSync(file);  
+var db = new sqlite3.Database(file);
 
-// You can then add whatever routing code you need
+app.use(express.static('public'));
 
-// This module is exported and served by the main server.js located
-// at the root of this set of projects. You can access it by lanching the main
-// server and visiting http(s)://127.0.0.1:8080/name_of_you_project/ (if on a local server)
-// or more generally: http(s)://server_name:port/name_of_you_project/
-module.exports = app;
+app.get('/test', function (req, res, next) {
+  db.all("SELECT * from table1", function(err, row) {
+        res.json(row);
+    });
+    db.close;
+
+})
+
+
+
+
+var server = app.listen(8081, function () {
+
+  var host = server.address().address
+  var port = server.address().port
+
+  console.log("应用实例，访问地址为 http://%s:%s", host, port)
+
+})
