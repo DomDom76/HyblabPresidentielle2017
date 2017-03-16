@@ -1,16 +1,157 @@
+<!-- width: 960px; -->
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
     <head>
-        <title>OGLEDALO </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8">
+
+        <title>Communes Miroirs</title>
+
         <link rel="stylesheet" href="Ogledalo.css" >
 
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="main.js" defer></script>
+        <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js" ></script>
+
+        <script src="stars.js" defer></script>
     </head>
-    <div class="un">
-        <p>OGLEDALO</p>
-    </div>
-    <div>
-    	<p>Box-sizing</p>
-    	<p>Teste pour voir si le site est bien en responsive design et si ça coupe bien les mots comme il le faudrait ainsi notre site se extrêmement performant et puissant !</p>
-    </div>
+
+    <body>
+        
+        <section id="fullpage">
+        <canvas id="stars" width="300" height="300"></canvas>
+            <article class="section" id="slide1">
+                <h1 class="text">Communes Miroirs</h1>
+                <h2 class="text">Miroirs de communes</h2>
+                <div id="div_apparition_fleche"><img src="public/img/fleche_bas.svg" id="fleche" alt="Une flèche en SVG" class="animated bounce infinite"/></div>
+            </article>
+
+            <article class="section" id="footer">
+
+            <div id="partie1_footer">
+              <h1>Au coeur de ce projet</h1>
+              <hr width="15%" color="white">
+            </div>
+
+            <div id="partie2_footer">
+              <ul id="liste_noms">
+                <li>Thomas Blin
+                  <ul id="poste">
+                    <li><span class="text_bleu">Ecole de Design<br />Designeur</span></li>
+                  </ul>
+                </li>
+                <li>Julie Colliou
+                  <ul id="poste">
+                    <li><span class="text_bleu">Ecole de Design<br />Designeur</span></li>
+                  </ul>
+                </li>
+                <li>Alizée Parry
+                  <ul id="poste">
+                    <li><span class="text_bleu">Ecole de Design<br />Designeur</span></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul id="liste_noms">
+                <li>Sandra Escolar
+                  <ul id="poste">
+                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
+                  </ul>
+                </li>
+                <li>Yumiao Fu
+                  <ul id="poste">
+                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
+                  </ul>
+                </li>
+                <li>Yinuo Li
+                  <ul id="poste">
+                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
+                  </ul>
+                </li>
+                <li>Domitie Lavice
+                  <ul id="poste">
+                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            
+            <div id="bandeau">
+              
+                <!-- Les organisateurs -->
+                <ul>
+                  <!-- Logo Hyblab -->
+                  <li><a href="http://www.hyblab.fr/"><img id="hyblab" src="public/img/logo_hyblab.png" alt="Hyblab"></a></li>
+                  <li><a href="http://www.ouestmedialab.fr/"><img src="public/img/ouestmedialab.png" alt="Ouest Médialab"></a></li>
+                  <li><a href="http://www.lecolededesign.com/"><img src="public/img/design.png" alt="design"></a></li>
+                  <li><a href="http://www.univ-nantes.fr/"><img src="public/img/universite.png" alt="Université de Nantes"></a></li>
+                  <li><a href="http://www.polytech.univ-nantes.fr/"><img src="public/img/polytech.png" alt="Polytech Nantes"></a></li>
+                </ul>
+                <!-- Les autres logos -->
+                <ul>
+                  <!-- Logo de votre partenaire -->
+                  <li><a href="http://www.rue89strasbourg.com/"><img src="public/img/rue89.png" alt="rue89strasbourg"></a></li>
+                </ul>
+              </div>
+          </article>
+
+      </section >
+
+
+    </body>
 </html>
+
+<!--
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+    <head>
+        <title>Les communes miroirs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Team Ogledalo" />
+
+        <script source="main.js"></script>
+    </head>
+
+
+    <div class="un">
+        <p>Zoom sur les présidentielles </p>
+        <p>Communes Miroirs </p>
+        <p>Miroir de communes </p>
+    </div>
+
+    <footer class="footer" style="width:100%;overflow:auto;color: #92FCFF; font-family: 'Raleway', sans-serif;">
+
+        </div>
+        <div style="float:left;margin-left :50px; width:20%"><b><font size="5">
+            Ecole de Design  </font><br>
+                   
+                <ol><br><font size="4">
+                <li>BLIN Thomas</li>
+                <li>COLLIOU Julie</li>
+                <li>PARRY Alizée</li></font>
+                    </ol></b>
+            </div> 
+
+            </div>
+                <div style="float:left;margin-left :50px; width:20%"><b><font size="5">
+            Ecole d'Ingénieur  </font><br>
+                   
+                <ol><br><font size="4">
+                <li>ESCOLAR Sandra</li>
+                <li>FU Yumiao</li>
+                <li>LAVICE Domitie</li>
+                <li>LI Yinuo</li></font>
+                    </ol></b>
+        </div> 
+
+        <img src="public/img/rue89.png" alt="rue89" style="vertical-align:middle">
+        <img src="public/img/logo_hyblab.png" alt="hyblab" style="vertical-align:middle">
+        <img src="public/img/polytech.png" alt="polytech" style="vertical-align:middle">
+        <img src="public/img/universite.png" alt="universite" style="vertical-align:middle">
+        <img src="public/img/ouestmedialab.png" alt="ouest" style="vertical-align:middle">
+    </footer> 
+
+
+
+</html>
+-->
