@@ -1,5 +1,6 @@
 .bodyc
 {
+    font-family: 'Hans';
     background-color:dimgrey;
 }
 .foot
@@ -21,7 +22,7 @@
 }
 .icon1
 {
-    display: inline;
+    vertical-align: middle;
     height: 20px;
     width: 20px;
 }
