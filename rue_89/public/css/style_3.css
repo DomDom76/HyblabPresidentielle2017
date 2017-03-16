@@ -1,0 +1,73 @@
+/** GLOBAL **/
+
+* {
+  font-family: 'Hans';
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Hans';
+    src: url('../font/HANS_KENDRICK/HansKendrick-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** CONFIG SLIDES **/
+.section {
+    display: flex;
+    color: white;
+    text-align: justify;
+}
+
+.section h1 { 
+  display: block;
+  /*margin-right: 10%;*/
+  /*margin-left: 10%;*/
+  /*margin-bottom: 2%;*/
+  font-size: 200%;
+}
+
+
+#slide5 {
+	position: absolute;
+	width: 960px;
+	height: 100%;
+    background-color: gray;
+}
+
+
+/** SLIDE 5 **/
+
+#slide5 h1{
+  font-size: 150%;
+}
+
+#partie_gauche{
+  display: inline-block;
+  position: relative;
+  width: 75%;
+  vertical-align: top;
+  /*margin-top: 30%;*/
+}
+
+#partie_droite{
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 25%;
+  vertical-align: top;
+  /*margin-top: -20%*/;
+}
+
+#titre_gauche{position: absolute; bottom: 80%; top: 1%; left: 1%}
+#img_cmnes {position: absolute; top: 20%; left: 1%; width: 30%; height: 30%;}
+#img_fleche {position: absolute; top: 55%; left: 1%; width: 30%; height: 35%;}
+
+#bloc3{position: absolute; top: 20%; right: 5%;}
+#image_gauche{}
+#commune{display: inline-block; width: 23%;}
+#fleche{display: inline-block; width: 23%;}
+#image_legende {position: absolute; bottom: 23%; right: 11.5%; width: 16.5%; margin-top:-30%;}
+
