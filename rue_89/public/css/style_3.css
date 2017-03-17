@@ -4,7 +4,8 @@
   font-family: 'Hans';
   font-weight: normal;
   font-style: normal;
-
+	margin:0;
+	padding:0;
 }
 
 @font-face {
@@ -16,7 +17,7 @@
 
 /** CONFIG SLIDES **/
 .section {
-    display: flex;
+    /*display: flex;*/
     color: white;
     text-align: justify;
 }
@@ -27,10 +28,10 @@
 }
 
 #slide5 {
-	position: absolute;
+	/*position: absolute;*/
 	width: 100%;
 	height: 100%;
-    background-color: #212427;
+    background-color: #404345;
 }
 
 
@@ -45,163 +46,113 @@
 #partie_gauche{
   display: inline-block;
   position: relative;
-  width: 75%;
+  width: 65%;
+  padding-left:5%;
+  padding-right:5%;
   vertical-align: top;
   /*margin-top: 30%;*/
 }
 
-#titre_gauche{position: absolute; bottom: 80%; top: 1%; left: 1%}
+#titre_gauche{
+	position: absolute; 
+	bottom: 80%; 
+	top: 1%; 
+	left: 1%
+}
 
 #graph_gauche{
 	display: flex;
-	margin-top:50%;
+	margin-top:45%;
 }
 
-#circle_1 { 
+.circle_1 { 
 	position: relative;
 	margin: auto;
-	float: left;
 	width: 25px; 
 	height: 25px;
-	background: #16191A ; 
+	background: #505355 ; 
 	border-radius: 50px;
 }
 
-#circle_1:hover { 
+.circle_1:hover { 
 	background: #FFFFFF;
 }
 
-#circle_2 { 
+.circle_2 { 
 	position: relative;
 	margin: auto;
-	float: left;
 	width: 50px; 
 	height: 50px;
-	background: #16191A ; 
+	background: #505355 ; 
 	border-radius: 50px; 
 }
 
-#circle_2:hover { 
-	background: #9EA3A7;
+.circle_2:hover { 
+	background: #595D60;
 }
 
-#circle_3 { 
+.circle_3 { 
 	position: relative;
 	margin: auto;
-	float: left;
 	width: 75px; 
 	height: 75px;
-	background: #16191A ; 
+	background: #505355 ; 
 	border-radius: 50px; 
 }
 
-#circle_3:hover { 
-	background: #595D5F;
+.circle_3:hover { 
+	background: #353A3D;
 }
 
-#circle_4 { 
+.circle_4 { 
 	position: relative;
 	margin: auto;
-	float: left;
 	width: 100px; 
 	height: 100px;
-	background: #16191A ; 
+	background: #505355 ; 
 	border-radius: 50px; 
 }
 
-#circle_4:hover { 
-	background: #373A3C;
+.circle_4:hover { 
+	background: #1B1E20;
 }
 
+#img_fleche{
+	position: relative;
+	width:100%;
+	height:100%;
+	padding-top: 5%;
+}
 
 /*partie droite*/
 
 #partie_droite{
   display: inline-block;
   position: relative;
-  height: 100%;
-  width: 25%;
-  /*vertical-align: top;*/
-}
+  width: 20%;
+  vertical-align: top;
+ }
+ 
 
 #bloc3{
-	position: absolute; 
-	top: 150px; 
-	right: -150px;
-	width:150px;
-	height:100px;
-	z-index:2;	
+	padding-top: 20%;
+	padding-left: 5%;
+	padding-right:5%;
+	right: 10%;
 }
 
-#talkbubble {
-   width: 250px;
-   height: 150px;
-   background: #16191A;
-   position: relative;
-   top: 150px;
-   right: 20px;
-   -moz-border-radius:    10px;
-   -webkit-border-radius: 10px;
-   border-radius:         10px;
-}
-#talkbubble:before {
-	content:"";
-	z-index:1;
-	position: absolute;
-	right: 100%;
-	top: 26px;
-	width: 0;
-	height: 0;
-	border-top: 13px solid transparent;
-	border-right: 26px solid #16191A;
-	border-bottom: 13px solid transparent;
-   
+#bloc4{
+	padding-top: 20%;
+	padding-left: 5%;
+	padding-right:5%;
+	right: 10%;
+	font-weight: bold;
 }
 
-#image_legende{
-	position: relative;
-
-	right:20%;
-}
-
-
-#circle1 {
-	position: absolute;
-	top: 5%;
-	left: 10%;
-	width: 35px; 
-	height: 35px;
-	background: #9EA3A7 ; 
-	border-radius: 50px; 
-}
-
-
-#circle2 {
-	position: absolute;
-	top: 5%;
-	left: 10%;
-	width: 25px; 
-	height: 25px;
-	background: #FFFFFF ; 
-	border-radius: 50px;
-}
-
-#circle3 { 
-	position: absolute;
-	top: 5%;
-	left: 10%;
-	width: 50px; 
-	height: 50px;
-	background: #595D5F ; 
-	border-radius: 50px; 
-}
-
-#circle4 { 
-	position: absolute;
-	top: 5%;
-	left: 10%;
-	width: 75px; 
-	height: 75px;
-	background: #373A3C ; 
-	border-radius: 50px; 
+#img_legende{
+	height:auto;
+	width:80%;
+	padding-top: 60%;	
+	padding-left: 15%;
+	padding-right: 5%;
 }
