@@ -65,6 +65,15 @@
 	margin-top:45%;
 }
 
+.circle{
+	position: relative;
+}
+
+.circle div{
+	position: absolute;
+	top: -200px;
+}
+
 .circle_1 { 
 	position: relative;
 	margin: auto;
@@ -75,6 +84,10 @@
 }
 
 .circle_1:hover { 
+	background: #FFFFFF;
+}
+
+.circle_1:hover, #c1 { 
 	background: #FFFFFF;
 }
 
