@@ -17,7 +17,7 @@
 /*
 @font-face {
     font-family: 'HansKendrick';
-    src: url('font/HansKendrick-Regular.otf');
+    src: url('public/fonts/HansKendrick-Regular.otf');
     font-weight: bold;
     font-style: normal;
 }
@@ -25,14 +25,14 @@
 
 @font-face {
     font-family: 'HansKendrick';
-    src: url('font/HansKendrick-Regular.otf');
+    src: url('public/fonts/HansKendrick-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'HansKendrick';
-    src: url('font/HansKendrick-Regular.otf');
+    src: url('public/fonts/HansKendrick-Regular.otf');
     font-weight: normal;
     font-style: italic;
 }*/
@@ -78,36 +78,16 @@
     position: absolute;
     font-size : 3em;
 }
-
-#arrow {
-    position: absolute;
-    margin: 50 auto;
-    /*display: block;*/
-    left :50%;
-    -webkit-animation: arrow 1s both infinite;
-    animation: arrow 1s both infinite;
+   
+.arrow img {
+  position: absolute;
+  margin: 50 auto;
+  /*display: block;*/
+  left :50%;
+  top: 80%;
+  -webkit-animation: arrow 1s both infinite;
+  animation: arrow 1s both infinite;
 }
-
-.arrow1 img {
-    top: 60%;
-    left :50%;
-}
-
-.arrow2 img {
-    top: 180%;
-    left :50%;
-}
-
-.arrow3 img {
-    top: 280%;
-    left :50%;
-}
-
-.arrow4 img {
-    top: 380%;
-    left :50%;
-}
-
 
 @-webkit-keyframes arrow {
     0%, 20%, 50%, 80%, 100% {
@@ -141,9 +121,7 @@
 #slide3 h1{
     color:#FFFFFF;
     font-size: 2em;
-    margin-left: 10%;
-    padding-top: 2%;
-    margin-top: 10%;
+    margin-left: 10%
 }
 
 #slide3 hr{
@@ -153,50 +131,26 @@
 }
 
 #deux{
-    margin-left : 10%;
-    margin-top: 10%;
-    position: absolute;
-}
-
-#sept{
-    margin-left: 40%;
-    margin-top: 10%;
-    position: relative;
-}
-
-#douze{
-    margin-left : 70%;
-    margin-top: -19%;
-}
-
-#douze, #sept, #deux {
-    /*width: 100%;*/
-    /*height: 50%;*/
+    margin-left : 1 0%;
+    width: 100%;
     max-width: 300px;
-    /*margin: 80px auto 0;*/
+    margin: 120px auto 0;
 }
+
 
 ul {
-    /*list-style: none;*/
+    list-style: none;
+    margin: 2.3em auto 0;
     width: 50%;
     padding: 0;
     font-size : 1.1em;
-    position : absolute;
-    margin-left: 30%;
-    margin-top: 30%;
 }
-
-span{
-    margin-left: 5%;
-}
-
-/*
 .icon {
     display: inline-block;
     width: 1.3em;
     height: 1.3em;
     margin-right: 10px;
-}*/
+}
 
 #PS {
     color: #F24643;
@@ -208,17 +162,41 @@ span{
     color: #000000;
 }
 
-#Modem{
-    color: #CC6633;
+.label {font-size: 1.3em}
+
+
+#sept{
+    margin-left : 1 0%;
+    width: 100%;
+    max-width: 300px;
+    margin: 120px auto 0;
 }
 
-.label {
-    font-size: 1.3em;
+ul {
+    list-style: none;
+    margin: 2.3em auto 0;
+    width: 50%;
+    padding: 0;
+    font-size : 1.1em;
+}
+.icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 10px;
 }
 
-.chart__legend--color {
-    margin-top: -25%;
+#PS {
+    color: #F24643;
 }
+#UMP {
+    color: #4EA1D3;
+}
+#FN{
+    color: #000000;
+}
+
+.label {font-size: 1.3em}
 
 /** Pied de page **/
 #partie1_footer, #partie2_footer {

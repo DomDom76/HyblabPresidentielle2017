@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Communes Miroirs</title>
+
+        <link rel="stylesheet" href="public/css/Ogledalo.css" >
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+        <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js" ></script>
+        <script src="http://www.chartjs.org/assets/Chart.min.js"></script>
+        <script src="public/js/stars.js" defer></script>
+        <script src="public/js/gauge2.js" defer></script>
+        <script src="public/js/gauge7.js" defer></script>
+        <script src="public/js/main.js" defer></script>
+    </head>
+
+    <body>
+        
+        <section id="fullpage">
+       
+            <article class="section" id="slide1">
+                <h1 class="text">Communes Miroirs</h1>
+                <h2 class="text">Miroirs de communes</h2>
+                <canvas id="stars" width="300" height="300"></canvas>
+                <div class="container">
+                  <div class="arrow">
+                    <img src="http://marcelklacan.com/images/icon.png" alt="" />
+                  </div>
+                </div>
+                
+                
+            </article>
+
+            <article class="section" id="slide3">
+                <h1 class="text">Résultats nationaux aux présidentielles</h1>
+                <hr width="5%" color="white">
+
+                <div class="container" id="deux">
+                  <div class="chart">
+                    <canvas id="chart-area" width="300" height="300"></canvas>
+                    <div class="chart__legend--color">
+                      <ul>
+                        <li>
+                          <i class="PS" id="PS"></i>
+                          <span class="label" id="PS">Parti Socialiste</span>
+                        </li>
+                        <li>
+                          <i class="UMP"></i>
+                          <span class="label" id="UMP">UMP</span>
+                        </li>
+                        <li>
+                          <i class="FN"></i>
+                          <span class="label" id="FN">Front National</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!-- .chart -->
+                </div>
+
+                <div class="container" id="sept">
+                  <div class="chart">
+                    <canvas id="chart-area" width="300" height="300"></canvas>
+                    <div class="chart__legend--color">
+                      <ul>
+                        <li>
+                          <i class="PS" id="PS"></i>
+                          <span class="label" id="PS">Parti Socialiste</span>
+                        </li>
+                        <li>
+                          <i class="UMP"></i>
+                          <span class="label" id="UMP">UMP</span>
+                        </li>
+                        <li>
+                          <i class="Modem"></i>
+                          <span class="label" id="FN">Modem</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!-- .chart -->
+                </div>
+            </article>
+
+            <article class="section" id="footer">
+
+            <div id="partie1_footer">
+              <h1>Au coeur de ce projet</h1>
+            </div>
+
+            <div id="partie2_footer">
+              <ul id="liste_noms">
+                <li>Thomas Blin
+                  <ul id="poste">
+                    <li><span class="text_bleu">Ecole de Design<br />Designeur</span></li>
+                  </ul>
+                </li>
+                <li>Julie Colliou
+                  <ul id="poste">
+                    <li><span class="text_bleu">Ecole de Design<br />Designeur</span></li>
+                  </ul>
+                </li>
+                <li>Alizée Parry
+                  <ul id="poste">
+                    <li><span class="text_bleu">Ecole de Design<br />Designeur</span></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul id="liste_noms">
+                <li>Sandra Escolar
+                  <ul id="poste">
+                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
+                  </ul>
+                </li>
+                <li>Yumiao Fu
+                  <ul id="poste">
+                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
+                  </ul>
+                </li>
+                <li>Yinuo Li
+                  <ul id="poste">
+                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
+                  </ul>
+                </li>
+                <li>Domitie Lavice
+                  <ul id="poste">
+                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            
+            <div id="bandeau">
+              
+                <!-- Les organisateurs -->
+                <ul>
+                  <!-- Logo Hyblab -->
+                  <li><a href="http://www.hyblab.fr/"><img id="hyblab" src="public/img/logo_hyblab.png" alt="Hyblab"></a></li>
+                  <li><a href="http://www.ouestmedialab.fr/"><img src="public/img/ouestmedialab.png" alt="Ouest Médialab"></a></li>
+                  <li><a href="http://www.lecolededesign.com/"><img src="public/img/design.png" alt="design"></a></li>
+                  <li><a href="http://www.univ-nantes.fr/"><img src="public/img/universite.png" alt="Université de Nantes"></a></li>
+                  <li><a href="http://www.polytech.univ-nantes.fr/"><img src="public/img/polytech.png" alt="Polytech Nantes"></a></li>
+                </ul>
+                <!-- Les autres logos -->
+                <ul>
+                  <!-- Logo de votre partenaire -->
+                  <li><a href="http://www.rue89strasbourg.com/"><img src="public/img/rue89.png" alt="rue89strasbourg"></a></li>
+                </ul>
+              </div>
+          </article>
+
+        </section >
+
+
+    </body>
+</html>
+
+<!--
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+    <head>
+        <title>Les communes miroirs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Team Ogledalo" />
+
+        <script source="main.js"></script>
+    </head>
+
+
+    <div class="un">
+        <p>Zoom sur les présidentielles </p>
+        <p>Communes Miroirs </p>
+        <p>Miroir de communes </p>
+    </div>
+
+    <footer class="footer" style="width:100%;overflow:auto;color: #92FCFF; font-family: 'Raleway', sans-serif;">
+
+        </div>
+        <div style="float:left;margin-left :50px; width:20%"><b><font size="5">
+            Ecole de Design  </font><br>
+                   
+                <ol><br><font size="4">
+                <li>BLIN Thomas</li>
+                <li>COLLIOU Julie</li>
+                <li>PARRY Alizée</li></font>
+                    </ol></b>
+            </div> 
+
+            </div>
+                <div style="float:left;margin-left :50px; width:20%"><b><font size="5">
+            Ecole d'Ingénieur  </font><br>
+                   
+                <ol><br><font size="4">
+                <li>ESCOLAR Sandra</li>
+                <li>FU Yumiao</li>
+                <li>LAVICE Domitie</li>
+                <li>LI Yinuo</li></font>
+                    </ol></b>
+        </div> 
+
+        <img src="public/img/rue89.png" alt="rue89" style="vertical-align:middle">
+        <img src="public/img/logo_hyblab.png" alt="hyblab" style="vertical-align:middle">
+        <img src="public/img/polytech.png" alt="polytech" style="vertical-align:middle">
+        <img src="public/img/universite.png" alt="universite" style="vertical-align:middle">
+        <img src="public/img/ouestmedialab.png" alt="ouest" style="vertical-align:middle">
+    </footer> 
+
+
+
+</html>
+-->

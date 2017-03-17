@@ -2,34 +2,34 @@
 //http://jsbin.com/wapono/13/edit
 
 //data variables defined
-var credsAvail = 19.6 ;
-var credsPartII = 28.88;
-var credsPartIV = 25.8;
-var credsEarned = credsPartII + credsPartIV + credsAvail;
+var credsAvail2 = 19.6 ;
+var credsPartII2 = 28.88;
+var credsPartIV2 = 25.8;
+var credsEarned2 = credsPartII2 + credsPartIV2 + credsAvail2;
 
 var doughnutData = [
         {
-          value: credsPartII,
+          value: credsPartII2,
           color:"#E85A71",
           highlight: "#E85A71",
           label: "Part II"
         },
         {
-          value: credsPartIV,
+          value: credsPartIV2,
           color:"#4EA1D3",
           highlight: 'green',
           label: "Part IV"
         },
         {
-          value: credsAvail - credsEarned,
+          value: credsAvail2 - credsEarned2,
           color: "#000000",
           highlight: "#000000",
-          label: "Credits Still Available"
+          label: "Année"
         }
       ];
 
 $(document).ready(function(){
-  var ctx = $('#chart-area').get(0).getContext("2d");
+  var ctx = $('#chart-area2').get(0).getContext("2d");
   var myDoughnut = new Chart(ctx).Doughnut(doughnutData,{
       animation:true,
       animationEasing: 'easeOutQuart',
@@ -43,8 +43,8 @@ $(document).ready(function(){
         //Globals for Chart Summary
         var alpha = 1; //opacity
         ctx.fillStyle = "rgba(94, 98, 101)" + alpha + ")";
-        var canvasWidthvar = $('#chart-area').width();
-        var canvasHeight = $('#chart-area').height();
+        var canvasWidthvar = $('#chart-area2').width();
+        var canvasHeight = $('#chart-area2').height();
         var constant = 40; //114 original
 
         //Total Percentage Font
