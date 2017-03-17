@@ -23,18 +23,14 @@
 
 .section h1 { 
   display: block;
-  /*margin-right: 10%;*/
-  /*margin-left: 10%;*/
-  /*margin-bottom: 2%;*/
   font-size: 200%;
 }
-
 
 #slide5 {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-    background-color: gray;
+    background-color: #212427;
 }
 
 
@@ -44,6 +40,8 @@
   font-size: 150%;
 }
 
+/*partie gauche*/
+
 #partie_gauche{
   display: inline-block;
   position: relative;
@@ -52,22 +50,158 @@
   /*margin-top: 30%;*/
 }
 
+#titre_gauche{position: absolute; bottom: 80%; top: 1%; left: 1%}
+
+#graph_gauche{
+	display: flex;
+	margin-top:50%;
+}
+
+#circle_1 { 
+	position: relative;
+	margin: auto;
+	float: left;
+	width: 25px; 
+	height: 25px;
+	background: #16191A ; 
+	border-radius: 50px;
+}
+
+#circle_1:hover { 
+	background: #FFFFFF;
+}
+
+#circle_2 { 
+	position: relative;
+	margin: auto;
+	float: left;
+	width: 50px; 
+	height: 50px;
+	background: #16191A ; 
+	border-radius: 50px; 
+}
+
+#circle_2:hover { 
+	background: #9EA3A7;
+}
+
+#circle_3 { 
+	position: relative;
+	margin: auto;
+	float: left;
+	width: 75px; 
+	height: 75px;
+	background: #16191A ; 
+	border-radius: 50px; 
+}
+
+#circle_3:hover { 
+	background: #595D5F;
+}
+
+#circle_4 { 
+	position: relative;
+	margin: auto;
+	float: left;
+	width: 100px; 
+	height: 100px;
+	background: #16191A ; 
+	border-radius: 50px; 
+}
+
+#circle_4:hover { 
+	background: #373A3C;
+}
+
+
+/*partie droite*/
+
 #partie_droite{
   display: inline-block;
   position: relative;
   height: 100%;
   width: 25%;
-  vertical-align: top;
-  /*margin-top: -20%*/;
+  /*vertical-align: top;*/
 }
 
-#titre_gauche{position: absolute; bottom: 80%; top: 1%; left: 1%}
-#img_cmnes {position: absolute; top: 20%; left: 1%; width: 30%; height: 30%;}
-#img_fleche {position: absolute; top: 55%; left: 1%; width: 30%; height: 35%;}
+#bloc3{
+	position: absolute; 
+	top: 150px; 
+	right: -150px;
+	width:150px;
+	height:100px;
+	z-index:2;	
+}
 
-#bloc3{position: absolute; top: 20%; right: 5%;}
-#image_gauche{}
-#commune{display: inline-block; width: 23%;}
-#fleche{display: inline-block; width: 23%;}
-#image_legende {position: absolute; bottom: 23%; right: 11.5%; width: 16.5%; margin-top:-30%;}
+#talkbubble {
+   width: 250px;
+   height: 150px;
+   background: #16191A;
+   position: relative;
+   top: 150px;
+   right: 20px;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+#talkbubble:before {
+	content:"";
+	z-index:1;
+	position: absolute;
+	right: 100%;
+	top: 26px;
+	width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-right: 26px solid #16191A;
+	border-bottom: 13px solid transparent;
+   
+}
 
+#image_legende{
+	position: relative;
+
+	right:20%;
+}
+
+
+#circle1 {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	width: 35px; 
+	height: 35px;
+	background: #9EA3A7 ; 
+	border-radius: 50px; 
+}
+
+
+#circle2 {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	width: 25px; 
+	height: 25px;
+	background: #FFFFFF ; 
+	border-radius: 50px;
+}
+
+#circle3 { 
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	width: 50px; 
+	height: 50px;
+	background: #595D5F ; 
+	border-radius: 50px; 
+}
+
+#circle4 { 
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	width: 75px; 
+	height: 75px;
+	background: #373A3C ; 
+	border-radius: 50px; 
+}
