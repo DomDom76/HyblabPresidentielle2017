@@ -2,7 +2,7 @@
 {
     font-family:HansKendrick-Regular;
     src: url('../font/HANS_KENDRICK/._HansKendrick-Regular.otf'); 
-    background-color:dimgrey;
+    background-color:#404345;
 }
 .foot
 {
@@ -12,10 +12,10 @@
 .whatiscm
 {
     color: white;
-    width: 400px;
+    width: 500px;
     position: relative;
-    left: 900px;
-    top: 500px;
+    left: 800px;
+    top: 70px;
 }
 .titlewhatiscm
 {
