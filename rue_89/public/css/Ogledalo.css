@@ -10,14 +10,14 @@
 /* Polices */
 @font-face {
     font-family: 'HansKendrick';
-    src: url('public/fonts/HANSKENDRICK/HansKendrick-Regular.otf');
+    src: url('../font/HANS_KENDRICK/HansKendrick-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 /*
 @font-face {
     font-family: 'HansKendrick';
-    src: url('public/fonts/HansKendrick-Regular.otf');
+    src: url('font/HansKendrick-Regular.otf');
     font-weight: bold;
     font-style: normal;
 }
@@ -25,14 +25,14 @@
 
 @font-face {
     font-family: 'HansKendrick';
-    src: url('public/fonts/HansKendrick-Regular.otf');
+    src: url('font/HansKendrick-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'HansKendrick';
-    src: url('public/fonts/HansKendrick-Regular.otf');
+    src: url('font/HansKendrick-Regular.otf');
     font-weight: normal;
     font-style: italic;
 }*/
