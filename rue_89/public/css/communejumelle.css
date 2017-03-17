@@ -26,8 +26,8 @@
     top: 250px;
     left: 600px;
 	margin: auto;
-	width: 25px; 
-	height: 25px;
+	width: 30px; 
+	height: 30px;
 	background: #505355 ; 
 	border-radius: 50px;
 }
@@ -36,8 +36,8 @@
     top: 450px;
     left: 700px;
 	margin: auto;
-	width: 25px; 
-	height: 25px;
+	width: 30px; 
+	height: 30px;
 	background: #505355 ; 
 	border-radius: 50px;
 }
@@ -46,8 +46,8 @@
     top: 350px;
     left: 400px;
 	margin: auto;
-	width: 25px; 
-	height: 25px;
+	width: 30px; 
+	height: 30px;
 	background: #505355 ; 
 	border-radius: 50px;
 }
@@ -62,7 +62,7 @@
 	background: red;
 }
 
-.circle_2 { 
+.circle_14 { 
 	position: absolute;
     top: 200px;
     left: 200px;
@@ -73,11 +73,11 @@
 	border-radius: 50px; 
 }
 
-.circle_2:hover { 
+.circle_14:hover { 
 	background: red;
 }
 
-.circle_3 { 
+.circle_15 { 
 	position: absolute;
     top: 500px;
     left: 300px;
@@ -88,7 +88,36 @@
 	border-radius: 50px; 
 }
 
-.circle_3:hover { 
+.circle_15:hover { 
+	background: red;
+}
+.circle_16 { 
+	position: absolute;
+    top: 200px;
+    left: 800px;
+	margin: auto;
+	width: 50px; 
+	height: 50px;
+	background: #505355 ; 
+	border-radius: 50px; 
+}
+
+.circle_16:hover { 
+	background: red;
+}
+
+.circle_17 { 
+	position: absolute;
+    top: 600px;
+    left: 800px;
+	margin: auto;
+	width: 75px; 
+	height: 75px;
+	background: #505355 ; 
+	border-radius: 50px; 
+}
+
+.circle_17:hover { 
 	background: red;
 }
 
