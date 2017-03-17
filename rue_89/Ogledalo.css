@@ -47,57 +47,161 @@
 #fullpage {
     /*background-color: #9EA3A7 ;*/
 }
+
 /** SLIDE 1 **/
 #slide1 {
     text-align: center ;
     box-sizing: auto;
-    margin: auto;
+    margin: auto%;
+    position: relative;
+    /*background-color: rgb(94, 98, 101);*/
 }
 #slide1 h1 {
-  animation: apparition 1.5s linear forwards 0s;
-  text-transform : uppercase;
+    text-align: center ;
+    animation: apparition 1.5s linear forwards 0s;
+    text-transform : uppercase;
+    color : #FFFFFF;
+    position: absolute;
+    top:25%;
+    font-size : 5em;
+    margin-left: 28%
 }
 
 #slide1 h2 {
-  /*opacity:0;*/
-  animation: apparition 1.5s linear forwards 1s;
-  text-transform : uppercase;
+    /*opacity:0;
+    text-align : center;*/
+    color :#FFFFFF;
+    animation: apparition 1.5s linear forwards 1s;
+    text-transform : uppercase;
+    margin-left: 35%;
+    top:45%;
+    position: absolute;
+    font-size : 3em;
 }
    
-#fleche {
-    position: absolute;
-    bottom: 3%;
-    top: auto;
-    left:48%;
-    width: 2%;
+.arrow img {
+  position: absolute;
+  margin: 50 auto;
+  /*display: block;*/
+  left :50%;
+  top: 80%;
+  -webkit-animation: arrow 1s both infinite;
+  animation: arrow 1s both infinite;
 }
 
-#div_apparition_fleche {
+@-webkit-keyframes arrow {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+    }
+} 
+ 
+@keyframes arrow {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+} 
+
+#slide3 {
+    background-color: #1B1E20;
+    opacity: 20% ;
+}
+
+#slide3 h1{
+    color:#FFFFFF;
+    font-size: 2em;
+    margin-left: 10%
+}
+
+#slide3 hr{
+    position: relative;
+    top: -5%;
+    left: -37.5%;
+}
+
+#deux{
+    margin-left : 1 0%;
+
+}
+.container {
+  width: 100%;
+  max-width: 300px;
+  margin: 120px auto 0;
+}
+
+
+ul {
+    list-style: none;
+    margin: 2.3em auto 0;
+    width: 50%;
+    padding: 0;
+    font-size : 1.1em;
+}
+.icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 10px;
+}
+
+#PS {
+    color: #F24643;
+}
+#UMP {
+    color: #4EA1D3;
+}
+#FN{
+    color: #000000;
+}
+
+.label {font-size: 1.3em}
+
+
+/** Pied de page **/
+#partie1_footer, #partie2_footer {
     /*opacity: 0;*/
+    position: relative;
 }
 
-.apparition_fleche {
-  animation: apparition 1.5s linear forwards 2s;
-}   
+#footer h1 {
+    position: relative;
+    top: 5%;
+    left: 25%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    left : 40%;
+    font-size : 2em;
+}
 
 #bandeau {
-  padding-bottom: 3%;
-  background-color: white;
-  height: 15%;
-  width: 100%;
-  /*position: absolute;*/   
-  bottom: 0;
+    padding-bottom: 3%;
+    margin-top: 20%;
+    background-color: white;
+    height: 15%;
+    width: 100%;  
+
 }
 
 #bandeau li{
-  list-style-type: none;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 1px 5px 1px;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1px 5px 1px;
 }
 
 #bandeau img {
-  height: 40px;
+    height: 40px;
 }
 
 #bandeau ul{
@@ -105,45 +209,16 @@
 }    
 
 
-#footer h1 {
-  /*position: absolute;*/
-  top: 5%;
-  left: 25%;
-  text-transform: uppercase;;
-}
-
-#footer hr {
-  position: fixed;
-  top: 10%;
-  left: 44%;
-  
-}
-
 #liste_noms li{
-  list-style-type: none;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0% 0% 2%;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0% 3% 2%;
+    color : #FFFFFF;
+    width: 20vh;
+    font-size: 1em;
 }
 
-#partie1_footer{
-    position: relative ;
-    background-color: #6F7477;
-}
-
-#partie2_footer {
-    /*position: absolute;*/
-    margin-top : 0%;
-    background-color: #6F7477;
-}
-
-.apparition_partie1_footer {
-  animation: apparition 1.5s linear forwards 1s;
-}
-
-.apparition_partie2_footer {
-  animation: apparition 1.5s linear forwards 2s;
-}
 
 html,
 body {
@@ -162,5 +237,7 @@ body {
     width: 100%;
     height: 16rem;
     height: 100vh;
+    border-left-width: 10px;
     z-index: 1;
 }
+

@@ -555,6 +555,5 @@ function random(min, max, float) {
 		Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
 // init
 if (canvas) init();
