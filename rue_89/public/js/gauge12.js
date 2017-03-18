@@ -2,26 +2,26 @@
 //http://jsbin.com/wapono/13/edit
 
 //data variables defined
-var credsAvail7 = 51.18 ;
-var credsPartII7 = 25.87;
-var credsPartIV7 = 18.57;
-var credsEarned7 = credsPartII7 + credsPartIV7 + credsAvail7;
+var credsAvail12 = 19.88 ;
+var credsPartII12 = 16.86;
+var credsPartIV12 = 16.18;
+var credsEarned12 = credsPartII12 + credsPartIV12 + credsAvail12;
 
 var doughnutData = [
         {
-          value: credsPartII7,
+          value: credsPartII12,
           color:"#E85A71",
           highlight: "#E85A71",
           label: "Part II"
         },
         {
-          value: credsPartIV7,
+          value: credsPartIV12,
           color:"#4EA1D3",
           highlight: "green",
           label: "Part IV"
         },
         {
-          value: credsAvail7 - credsEarned7,
+          value: credsAvail12 - credsEarned12,
           color: "#CC6633",
           highlight: "#CC6633",
           label: "Année"
@@ -29,7 +29,7 @@ var doughnutData = [
       ];
 
 $(document).ready(function(){
-  var ctx = $('#chart-area7').get(0).getContext("2d");
+  var ctx = $('#chart-area12').get(0).getContext("2d");
   var myDoughnut = new Chart(ctx).Doughnut(doughnutData,{
       animation:true,
       animationEasing: 'easeOutQuart',
@@ -43,8 +43,8 @@ $(document).ready(function(){
         //Globals for Chart Summary
         var alpha = 1; //opacity
         ctx.fillStyle = "rgba(94, 98, 101)" + alpha + ")";
-        var canvasWidthvar = $('#chart-area7').width();
-        var canvasHeight = $('#chart-area7').height();
+        var canvasWidthvar = $('#chart-area12').width();
+        var canvasHeight = $('#chart-area12').height();
         var constant = 40; //114 original
 
         //Total Percentage Font
@@ -72,7 +72,7 @@ $(document).ready(function(){
         var fontsize = (canvasHeight/constant/3.14).toFixed(2);
         ctx.font=fontsize +"em HansKendrick";
         ctx.textBaseline="middle"; 
-        var statLabel = '2007';
+        var statLabel = '2012';
         var textWidth = ctx.measureText(statLabel).width;
         var txtPosx = Math.round((canvasWidthvar - textWidth)/2);
         ctx.fillText(statLabel, txtPosx, canvasHeight/2.1);
