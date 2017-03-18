@@ -41,7 +41,7 @@
 
 .section {
     color: white;
-    text-align: justify;
+    /*text-align: center;*/
 }
 
 
@@ -449,11 +449,29 @@ ul {
 
 /** ------------------------------------FOOTER------------------------------------ **/
 
+ .responsive_container
+{
+  overflow: hidden;
+  width: 100vw; 
+    height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+    max-height: 100vh;
+    max-width: 177.78vh; /* 16/9 = 1.778 */
+    margin: auto;
+    position: relative;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+    /*text-align: center;*/
+}
+
 
 #remerciementsText{
-	position: absolute;
+	position: relative;
 	margin-top:1%;
-	padding-left:33%;
+  text-align: center;
+  width: auto;
+  height: 100%;
+  top:10%;
+  left:30%;
 }
 
 @media only screen and (max-width: 845px){
@@ -465,17 +483,20 @@ ul {
 #remerciements{
 	position: relative;
 	padding-top:5%;
+  text-align: center;
 }
 
 #coeur{
-	position: absolute;
+	position: relative;
 	margin-top:5%;
+  text-align: center;
 }
 
 #partenaires{
 
-	position: absolute;
+	position: relative;
 	margin-top:5%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 845px){
