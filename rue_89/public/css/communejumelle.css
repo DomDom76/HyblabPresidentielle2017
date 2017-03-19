@@ -3,6 +3,7 @@
     font-family: 'Hans';
     src: url('../font/HANS_KENDRICK/HansKendrick-Regular.otf');
     background-color:#212427;
+    color: white;
 }
 .titrec
 {
@@ -55,9 +56,14 @@
 .circle_11:hover { 
 	background:red;
 }
+.circle_11:hover { 
+	display: block;
+}
+
 .circle_12:hover { 
 	background: red;
 }
+
 .circle_13:hover { 
 	background: red;
 }
