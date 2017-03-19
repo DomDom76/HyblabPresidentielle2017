@@ -13,24 +13,17 @@
     top: 100px;
     left: 500px;
 }
-.circle{
-	position: relative;
-}
-
-.circle div{
-	position: absolute;
-	top: -200px;
-}
 
 .circle_11 { 
-	position: absolute;
+	position: relative;
     top: 250px;
-    left: 600px;
+    right: 100px;
 	margin: auto;
 	width: 30px; 
 	height: 30px;
 	background: #505355 ; 
 	border-radius: 50px;
+    visibility: hidden;
 }
 .circle_12 { 
 	position: absolute;
@@ -55,23 +48,24 @@
 
 .circle_11:hover { 
 	background:red;
+    display: block;
 }
-.circle_11:hover { 
-	display: block;
-}
+
 
 .circle_12:hover { 
 	background: red;
+    display: block;
 }
 
 .circle_13:hover { 
 	background: red;
+    display: block;
 }
 
 .circle_14 { 
-	position: absolute;
+	position: relative;
     top: 200px;
-    left: 200px;
+    right: 500px;
 	margin: auto;
 	width: 50px; 
 	height: 50px;
@@ -81,6 +75,7 @@
 
 .circle_14:hover { 
 	background: red;
+    display: block;
 }
 
 .circle_15 { 
@@ -96,6 +91,7 @@
 
 .circle_15:hover { 
 	background: red;
+    display: block;
 }
 .circle_16 { 
 	position: absolute;
@@ -110,6 +106,7 @@
 
 .circle_16:hover { 
 	background: red;
+    display: block;
 }
 
 .circle_17 { 
@@ -125,6 +122,7 @@
 
 .circle_17:hover { 
 	background: red;
+    display: block;
 }
 
 .imglegende
@@ -134,4 +132,40 @@
     right: 100px;
     width: 300px;
     height: 300px;
+}
+
+#info4
+{
+    position: relative;
+    left: 80px;
+}
+#info1
+{
+    position: relative;
+    left: 80px;
+}
+#info2
+{
+    position: relative;
+    left: 80px;
+}
+#info3
+{
+    position: relative;
+    left: 80px;
+}
+#info5
+{
+    position: relative;
+    left: 80px;
+}
+#info6
+{
+    position: relative;
+    left: 80px;
+}
+#info7
+{
+    position: relative;
+    left: 80px;
 }

@@ -11,20 +11,18 @@ var db = new sqlite3.Database(file);
 app.use(express.static('public'));
 
 app.get('/test', function (req, res, next) {
-
-
-  db.all("SELECT ID from communes where ID = 1", function(err, row) {
-        res.json(row);
-    });
-    db.close;
-})
-app.get('/test', function (req, res, next) {
   db.all("SELECT ID from communes where ID = 1", function(err, row) {
         res.json(row);
     });
     db.close;
 })
 
+app.get('/communejumelle', function (req, res, next) {
+  db.all("SELECT ID, REGION, COMMUNE, ANNEE from communes where ID = 1", function(err, row) {
+        res.json(row);
+    });
+    db.close;
+})
 
 
 
