@@ -2,41 +2,47 @@
 //http://jsbin.com/wapono/13/edit
 
 //data variables defined
-var credsAvail12 = 19.88 ;
-var credsPartII12 = 16.86;
-var credsPartIV12 = 16.18;
+var credsAvail12 = 28.88 ;
+var credsPartII12 = 25.8;
+var credsPartIV12 = 19.6;
 var credsEarned12 = credsPartII12 + credsPartIV12 + credsAvail12;
+var credsPartV12 = 100 - credsEarned12
 
-var doughnutData = [
+var doughnutData12 = [
         {
           value: credsPartII12,
           color:"#E85A71",
-          highlight: "#E85A71",
-          label: "Part II"
+          highlight: "#FFFFFF",
+          label: "François Hollande"
         },
         {
           value: credsPartIV12,
           color:"#4EA1D3",
-          highlight: "green",
-          label: "Part IV"
+          highlight: "#FFFFFF",
+          label: "Nicolas Sarkozy"
         },
         {
-          value: credsAvail12 - credsEarned12,
-          color: "#CC6633",
-          highlight: "#CC6633",
-          label: "Année"
+          value: credsAvail12,
+          color: "#000000",
+          highlight: "#FFFFFF",
+          label: "Marine Le Pen"
+        },
+        {
+          value: credsPartV12,
+          color: "#696969",
+          highlight: "#FFFFFF ",
+          label: "Autres"
         }
       ];
 
 $(document).ready(function(){
   var ctx = $('#chart-area12').get(0).getContext("2d");
-  var myDoughnut = new Chart(ctx).Doughnut(doughnutData,{
+  var myDoughnut = new Chart(ctx).Doughnut(doughnutData12,{
       animation:true,
-      animationEasing: 'easeOutQuart',
       responsive: true,
-      showTooltips: false,
-      percentageInnerCutout : 80,
-      segmentShowStroke : true,
+      showTooltips: true,
+      percentageInnerCutout : 70,
+      segmentShowStroke : false,
       onAnimationProgress: function(){console.log('AnimationProgress')},
       onAnimationComplete: function() {
         

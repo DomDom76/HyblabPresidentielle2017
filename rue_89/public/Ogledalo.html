@@ -6,10 +6,7 @@
         <title>Communes Miroirs</title>
 		
 		<!-- CSS -->
-        <link rel="stylesheet" href="css/Ogledalo.css" >
-		<link rel="stylesheet" href="css/slide_3.css">
-		<link rel="stylesheet" href="css/slide_2.css" />
-	
+        <link rel="stylesheet" href="css/Ogledalo.css" >	
 
 		<!-- JS -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
@@ -19,11 +16,10 @@
 		<script src="semantic/semantic.min.js"></script>
         <script src="js/stars.js" defer></script>
         <script src="js/gauge2.js" defer></script>
-        <script src="js/gauge7.js" defer></script>
-        <script src="js/gauge12.js" defer></script>
+		<script src="js/gauge7.js" defer></script>
+		<script src="js/gauge12.js" defer></script>
         <script src="js/main.js" defer></script>		   
-		
-		<script type="text/javascript" src="js/example.js"></script>
+		<script src="js/example.js"></script>
 		
     </head>
 
@@ -37,7 +33,7 @@
                 <h2 class="text">Miroirs de communes</h2>
                 <canvas id="stars" width="300" height="300"></canvas>
                 <div class="container">
-                  <div class="arrow1">
+                  <div class="arrow">
                     <img src="http://marcelklacan.com/images/icon.png" alt="" />
                   </div>
                 </div>   
@@ -60,11 +56,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="container">
-                  <div class="arrow2">
-                    <img src="http://marcelklacan.com/images/icon.png" alt="" />
-                  </div>
-                </div>
 			</article>
 
 			<!-- SLIDE 3 -->
@@ -74,233 +65,185 @@
 
                 <div class="container" id="deux">
                   <div class="chart">
-                    <canvas id="chart-area2" width="300" height="300"></canvas>
-                  </div><!-- .chart -->
+                    <canvas id="chart-area" width="300" height="300"></canvas>
                 </div>
 
                 <div class="container" id="sept">
                   <div class="chart">
                     <canvas id="chart-area7" width="300" height="300"></canvas>
-                  </div><!-- .chart -->
                 </div>
-
                 <div class="container" id="douze">
-                  <div class="chart">
-                    <canvas id="chart-area12" width="300" height="300"></canvas>
-                  </div><!-- .chart -->
+                  	<div class="chart">
+                    	<canvas id="chart-area12" width="300" height="300"></canvas>
+                	</div>
                 </div>
-                <div class="chart__legend--color">
-                  	<ul>
-	                    <i class="PS" id="PS"></i>
-	                    <span class="label" id="PS">Parti Socialiste</span>
-
-						<i class="UMP"></i>
-						<span class="label" id="UMP">UMP</span>
-
-						<i class="FN"></i>
-						<span class="label" id="FN">Front National</span>
-						<i class="Modem"></i>
-						<span class="label" id="Modem">Modem</span>
-					</ul>
-                </div>
-                <div class="container">
-                  <div class="arrow3">
-                    <img src="http://marcelklacan.com/images/icon.png" alt="" />
-                  </div>
-                </div>
+                <div class="chart__legend--color" id="partis">
+                    <ul>
+	                    <p id="partis">
+	                      <i class="PS" id="PS"></i>
+	                      <span class="label" id="PS">Parti Socialiste</span>
+	                      <i class="UMP"></i>
+	                      <span class="label" id="UMP">UMP</span>
+	                      <i class="FN"></i>
+	                      <span class="label" id="FN">Front National</span>
+	                      <i id="Modem"></i>
+	                      <span class="label" id="Modem">Modem</span>
+	                    </p>
+	                </ul>
+	            </div>
             </article>
 
 			<!-- SLIDE 4 -->
 			<article class="section" id="slide4">
-			<div id="partie_gauche">
-				<div id="titre_gauche">
-					<h1>Qui sont les communes miroirs ?</h1>
-				</div>
+				<div id="partie_gauche">
+					<div id="titre_gauche">
+						<h1>Qui sont les communes miroirs ?</h1>
+					</div>
+					
+					<div id="graph_gauche">
+						<div class="circle circle_1">
+							<div>Gruchet-la-Valasse (76)
+								<br>Normandie
+								<br>3 113 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Guichainville (27)
+								<br>Normandie
+								<br>2 557 habitants
+							</div>
+						</div>
+						<div class="circle circle_2">
+							<div>Louviers (27)
+								<br>Normandie
+								<br>48 592 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Gervey (21)
+								<br>Bourgogne Franche-Comté
+								<br>3 082 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Essey-les-Nancy (54)
+								<br>Grand Est
+								<br>8 688 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Lèves (28)
+								<br>Val-de-Loire
+								<br>5 671 habitants
+							</div>
+						</div>
+						<div class="circle circle_3">
+							<div>Roanne (42)
+								<br>Rhône-Alpes
+								<br>35 200 habitants
+							</div>
+						</div>
+						<div class="circle circle_2">
+							<div>Wattignies (59)
+								<br>Haut-de-France
+								<br>14 190 habitants
+							</div>
+						</div>
+						<div class="circle circle_2">
+							<div>La Chapelle-Saint-Mesmin (45)
+								<br>Val-de-Loire
+								<br>10 117 habitants
+							</div>
+						</div>
+						<div class="circle circle_3">
+							<div>Chaumont (52)
+								<br>Grand Est
+								<br>22 674 habitants
+							</div>
+						</div>
+						
+						<div class="circle circle_2">
+							<div>Riorges (42)
+								<br>Rhône-Alpes
+								<br>10 741 habitants
+							</div>
+						</div>
+						
+						<div class="circle circle_1">
+							<div>Perrigny (39)
+								<br>Bourgogne Franche-Comté
+								<br>1 529 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Maintenon (28)
+								<br>Val-de-Loire
+								<br>4 296 habitants
+							</div>
+						</div>
+						<div class="circle circle_4">
+							<div>Reims (51)
+								<br>Grand Est
+								<br>319 059 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Saint-Germain-Les-Arpajon (91)
+								<br>Ile-de-France
+								<br>9 956 habitants
+							</div>
+						</div>
+					</div>
 				
-				<div id="graph_gauche">
-					<div class="circle circle_1">
-						<div>Gruchet-la-Valasse (76)
-							<br>Normandie
-							<br>3 113 habitants
-						</div>
-					</div>
-					<div class="circle circle_1">
-						<div>Guichainville (27)
-							<br>Normandie
-							<br>2 557 habitants
-						</div>
-					</div>
-					<div class="circle circle_2">
-						<div>Louviers (27)
-							<br>Normandie
-							<br>48 592 habitants
-						</div>
-					</div>
-					<div class="circle circle_1">
-						<div>Gervey (21)
-							<br>Bourgogne Franche-Comté
-							<br>3 082 habitants
-						</div>
-					</div>
-					<div class="circle circle_1">
-						<div>Essey-les-Nancy (54)
-							<br>Grand Est
-							<br>8 688 habitants
-						</div>
-					</div>
-					<div class="circle circle_1">
-						<div>Lèves (28)
-							<br>Val-de-Loire
-							<br>5 671 habitants
-						</div>
-					</div>
-					<div class="circle circle_3">
-						<div>Roanne (42)
-							<br>Rhône-Alpes
-							<br>35 200 habitants
-						</div>
-					</div>
-					<div class="circle circle_2">
-						<div>Wattignies (59)
-							<br>Haut-de-France
-							<br>14 190 habitants
-						</div>
-					</div>
-					<div class="circle circle_2">
-						<div>La Chapelle-Saint-Mesmin (45)
-							<br>Val-de-Loire
-							<br>10 117 habitants
-						</div>
-					</div>
-					<div class="circle circle_3">
-						<div>Chaumont (52)
-							<br>Grand Est
-							<br>22 674 habitants
-						</div>
-					</div>
-					
-					<div class="circle circle_2">
-						<div>Riorges (42)
-							<br>Rhône-Alpes
-							<br>10 741 habitants
-						</div>
-					</div>
-					
-					<div class="circle circle_1">
-						<div>Perrigny (39)
-							<br>Bourgogne Franche-Comté
-							<br>1 529 habitants
-						</div>
-					</div>
-					<div class="circle circle_1">
-						<div>Maintenon (28)
-							<br>Val-de-Loire
-							<br>4 296 habitants
-						</div>
-					</div>
-					<div class="circle circle_4">
-						<div>Reims (51)
-							<br>Grand Est
-							<br>319 059 habitants
-						</div>
-					</div>
-					<div class="circle circle_1">
-						<div>Saint-Germain-Les-Arpajon (91)
-							<br>Ile-de-France
-							<br>9 956 habitants
-						</div>
-					</div>
+					<div id="fleche"><img src="img/FLECHE.png" alt="une fleche" id="img_fleche" ></div>
 				</div>
 			
-				<div id="fleche"><img src="img/FLECHE.png" alt="une fleche" id="img_fleche" ></div>
-			</div>
-        
-			<div id="partie_droite">
-				<div id="b_gauche">
-					<p id=bloc3>Voici les résultats des 15 communes <br>« miroirs » françaises. <br></br>Elles sont calculées par rapport aux trois dernières présidentielles à +/- 2 % d’exactitude, pour les premiers tours.</p> 
-					<p id=bloc4>Faites vous partie de l’une d’entre elles ?</p>
-				</div>
-				
-				<div id="legende"><img src="img/LEGENDE2.png" alt="une fleche" id="img_legende" ></div>
+				<div id="partie_droite">
+					<div id="b_gauche">
+						<p id=bloc3>Voici les résultats des 15 communes <br>« miroirs » françaises. <br></br>Elles sont calculées par rapport aux trois dernières présidentielles à +/- 2 % d’exactitude, pour les premiers tours.</p> 
+						<p id=bloc4>Faites vous partie de l’une d’entre elles ?</p>
+					</div>
+					
+					<div id="legende"><img src="img/LEGENDE2.png" alt="une fleche" id="img_legende" ></div>
 
-			</div>
-			<div class="container" id="arrow4">
-                  <div class="arrow">
-                    <img src="http://marcelklacan.com/images/icon.png" alt="" />
-                  </div>
-            </div>
-			
-		</article>
+				</div>
+				
+			</article>
 			
 			
 			<!-- FOOTER -->
             <article class="section" id="footer">
+				<span class="responsive_container">			
+					<h1 id="remerciements">REMERCIEMENTS</h1>
+					<text id="remerciementsText">
+						Nous remercions toutes les personnes nous ayant permis de réaliser ce projet. 
+						<br>En particulier le Hyblab, Ouest Medialab, ainsi que l'Ecole de Design et Polytech Nantes.
+					</text>
 
-            <div id="partie1_footer">
-              <h1>Au coeur de ce projet</h1>
-            </div>
+					<h1 id="coeur">AU COEUR DE CE PROJET</h1>
+					<div id="design">
+						<h2 id="titredesign">Ecole de Design<h2>
+						<img class="photo" id="thomas" src="img/thomas.jpg"/><text class="photo-name" id="thomas-txt">Thomas Blin</text>
+						<img class="photo" id="julie" src="img/julie.jpg"/><text class="photo-name" id="julie-txt">Julie Colliou</text>
+						<img class="photo" id="alizee" src="img/alizee.jpg"/><text class="photo-name" id="alizee-txt">Alizée Parry</text>
+					</div>
+					<div id="titrepolytechnik">
+						<h2 id="polytechnik">Ecole d'Ingénieur<h2>
+						<img class="photo" id="sandra" src="img/sandra.jpg"/><text class="photo-name" id="sandra-txt">Sandra Escolar</text>
+						<img class="photo" id="yumiao" src="img/yumiao.jpg"/><text class="photo-name" id="yumiao-txt">Yumiao Fu</text>
+						<img class="photo" id="domitie" src="img/domitie.jpg"/><text class="photo-name" id="domitie-txt">Domitie Lavice</text>
+						<img class="photo" id="yinuo" src="img/yinuo.jpg"/><text class="photo-name" id="yinuo-txt">Yinuo Li</text>
+					</div>
 
-            <div id="partie2_footer">
-              <ul id="liste_noms">
-                <li>Thomas Blin
-                  <ul id="poste">
-                    <li><span class="text_bleu">Ecole de Design<br />Designeur</span></li>
-                  </ul>
-                </li>
-                <li>Julie Colliou
-                  <ul id="poste">
-                    <li><span class="text_bleu">Ecole de Design<br />Designeur</span></li>
-                  </ul>
-                </li>
-                <li>Alizée Parry
-                  <ul id="poste">
-                    <li><span class="text_bleu">Ecole de Design<br />Designeur</span></li>
-                  </ul>
-                </li>
-              </ul>
-
-              <ul id="liste_noms">
-                <li>Sandra Escolar
-                  <ul id="poste">
-                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
-                  </ul>
-                </li>
-                <li>Yumiao Fu
-                  <ul id="poste">
-                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
-                  </ul>
-                </li>
-                <li>Yinuo Li
-                  <ul id="poste">
-                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
-                  </ul>
-                </li>
-                <li>Domitie Lavice
-                  <ul id="poste">
-                    <li><span class="text_bleu">Polytech<br/>Développeur Web</span></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            
-            <div id="bandeau">
-              
-                <!-- Les organisateurs -->
-                <ul>
-                  <!-- Logo Hyblab -->
-                  <li><a href="http://www.hyblab.fr/"><img id="hyblab" src="img/logo_hyblab.png" alt="Hyblab"></a></li>
-                  <li><a href="http://www.ouestmedialab.fr/"><img src="img/ouestmedialab.png" alt="Ouest Médialab"></a></li>
-                  <li><a href="http://www.lecolededesign.com/"><img src="img/design.png" alt="design"></a></li>
-                  <li><a href="http://www.univ-nantes.fr/"><img src="img/universite.png" alt="Université de Nantes"></a></li>
-                  <li><a href="http://www.polytech.univ-nantes.fr/"><img src="img/polytech.png" alt="Polytech Nantes"></a></li>
-                </ul>
-                <!-- Les autres logos -->
-                <ul>
-                  <!-- Logo de votre partenaire -->
-                  <li><a href="http://www.rue89strasbourg.com/"><img src="img/rue89.png" alt="rue89strasbourg"></a></li>
-                </ul>
-              </div>
-          </article>
+					<h1 id="partenaires">PARTENAIRES</h1>                
+                	<a href="http://www.hyblab.fr/"><img class="logo" id="hyblab" src="img/logo_hyblab.png" alt="Hyblab"></a>
+                	<a href="http://www.ouestmedialab.fr/"><img class="logo" id="ouestmedia" src="img/ouestmedialab.png" alt="Ouest Médialab"></a>
+                	<a href="http://www.lecolededesign.com/"><img class="logo" id="design" src="img/design.png" alt="design"></a>
+                	<a href="http://www.univ-nantes.fr/"><img class="logo" id="univ-nantes" src="img/universite.png" alt="Université de Nantes"></a>
+                	<a href="http://www.polytech.univ-nantes.fr/"><img class="logo" id="popo" src="img/polytech.png" alt="Polytech Nantes"></a>
+                	<a href="http://www.rue89strasbourg.com/"><img class="logo" id="rue89" src="img/rue89.png" alt="rue89strasbourg"></a>
+                </span>
+        	</article>
 
         </section >
 
