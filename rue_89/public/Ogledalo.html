@@ -1,16 +1,262 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>OGLEDALO </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="Ogledalo.css" >
+<html lang="fr">
 
+    <head>
+        <meta charset="utf-8">
+        <title>Communes Miroirs</title>
+		
+		<!-- CSS -->
+        <link rel="stylesheet" href="css/Ogledalo.css" >	
+
+		<!-- JS -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+        <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js" ></script>
+        <script src="http://www.chartjs.org/assets/Chart.min.js"></script>
+		<script src="semantic/semantic.min.js"></script>
+        <script src="js/stars.js" defer></script>
+        <script src="js/gauge2.js" defer></script>
+		<script src="js/gauge7.js" defer></script>
+		<!-- <script src="js/gauge12.js" defer></script> -->
+        <script src="js/main.js" defer></script>		   
+		<script src="js/example.js"></script>
+		
     </head>
-    <div class="un">
-        <p>OGLEDALO</p>
-    </div>
-    <div>
-    	<p>Box-sizing</p>
-    	<p>Teste pour voir si le site est bien en responsive design et si ça coupe bien les mots comme il le faudrait ainsi notre site se extrêmement performant et puissant !</p>
-    </div>
+
+    <body>
+        
+        <section id="fullpage">
+       
+			<!-- SLIDE 1 -->
+            <article class="section" id="slide1">
+                <h1 class="text">Communes Miroirs</h1>
+                <h2 class="text">Miroirs de communes</h2>
+                <canvas id="stars" width="300" height="300"></canvas>
+                <div class="container">
+                  <div class="arrow">
+                    <img src="http://marcelklacan.com/images/icon.png" alt="" />
+                  </div>
+                </div>   
+            </article>
+			
+			<!-- SLIDE 2 -->
+			<article class="section" id="slide2">
+				<div id="gauche">
+					<object data="commune-miroir-ok.swf" height=360 width=640 class="flash"></object>
+				</div>
+			
+				<div id="droite">
+					<div class="whatiscm" >
+						<h2 class="titlewhatiscm">QU'EST-CE-QU'UNE COMMUNE MIROIR ?</h2>      
+						<div class="bloc1">
+							<span>Les communes « miroir » sont des communes spéciales et uniques. 
+							<br>Elles sont le reflet de la population nationale. Elles peuvent prédire les résultats des votes des élections présidentielles car elles ont + ou - 2% de différence avec les résultats finaux. 
+							<br></br>Un coup de chance ? Non ! 
+							<br></br>Sur les trois dernières présidentielles (2002, 2007, 2012), elles arrivent à obtenir les mêmes résultats et dans le bon ordre. Tiercé gagnant !</span>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<!-- SLIDE 3 -->
+            <article class="section" id="slide3">
+                <h1 class="text">Résultats nationaux aux présidentielles</h1>
+                <hr width="5%" color="white">
+
+                <div class="container" id="deux">
+                  <div class="chart">
+                    <canvas id="chart-area" width="300" height="300"></canvas>
+                    <div class="chart__legend--color">
+                      <ul>
+                        <li>
+                          <i class="PS" id="PS"></i>
+                          <span class="label" id="PS">Parti Socialiste</span>
+                        </li>
+                        <li>
+                          <i class="UMP"></i>
+                          <span class="label" id="UMP">UMP</span>
+                        </li>
+                        <li>
+                          <i class="FN"></i>
+                          <span class="label" id="FN">Front National</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!-- .chart -->
+                </div>
+
+                <div class="container" id="sept">
+                  <div class="chart">
+                    <canvas id="chart-area" width="300" height="300"></canvas>
+                    <div class="chart__legend--color">
+                      <ul>
+                        <li>
+                          <i class="PS" id="PS"></i>
+                          <span class="label" id="PS">Parti Socialiste</span>
+                        </li>
+                        <li>
+                          <i class="UMP"></i>
+                          <span class="label" id="UMP">UMP</span>
+                        </li>
+                        <li>
+                          <i class="Modem"></i>
+                          <span class="label" id="FN">Modem</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!-- .chart -->
+                </div>
+            </article>
+
+			<!-- SLIDE 4 -->
+			<article class="section" id="slide4">
+				<div id="partie_gauche">
+					<div id="titre_gauche">
+						<h1>Qui sont les communes miroirs ?</h1>
+					</div>
+					
+					<div id="graph_gauche">
+						<div class="circle circle_1">
+							<div>Gruchet-la-Valasse (76)
+								<br>Normandie
+								<br>3 113 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Guichainville (27)
+								<br>Normandie
+								<br>2 557 habitants
+							</div>
+						</div>
+						<div class="circle circle_2">
+							<div>Louviers (27)
+								<br>Normandie
+								<br>48 592 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Gervey (21)
+								<br>Bourgogne Franche-Comté
+								<br>3 082 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Essey-les-Nancy (54)
+								<br>Grand Est
+								<br>8 688 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Lèves (28)
+								<br>Val-de-Loire
+								<br>5 671 habitants
+							</div>
+						</div>
+						<div class="circle circle_3">
+							<div>Roanne (42)
+								<br>Rhône-Alpes
+								<br>35 200 habitants
+							</div>
+						</div>
+						<div class="circle circle_2">
+							<div>Wattignies (59)
+								<br>Haut-de-France
+								<br>14 190 habitants
+							</div>
+						</div>
+						<div class="circle circle_2">
+							<div>La Chapelle-Saint-Mesmin (45)
+								<br>Val-de-Loire
+								<br>10 117 habitants
+							</div>
+						</div>
+						<div class="circle circle_3">
+							<div>Chaumont (52)
+								<br>Grand Est
+								<br>22 674 habitants
+							</div>
+						</div>
+						
+						<div class="circle circle_2">
+							<div>Riorges (42)
+								<br>Rhône-Alpes
+								<br>10 741 habitants
+							</div>
+						</div>
+						
+						<div class="circle circle_1">
+							<div>Perrigny (39)
+								<br>Bourgogne Franche-Comté
+								<br>1 529 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Maintenon (28)
+								<br>Val-de-Loire
+								<br>4 296 habitants
+							</div>
+						</div>
+						<div class="circle circle_4">
+							<div>Reims (51)
+								<br>Grand Est
+								<br>319 059 habitants
+							</div>
+						</div>
+						<div class="circle circle_1">
+							<div>Saint-Germain-Les-Arpajon (91)
+								<br>Ile-de-France
+								<br>9 956 habitants
+							</div>
+						</div>
+					</div>
+				
+					<div id="fleche"><img src="img/FLECHE.png" alt="une fleche" id="img_fleche" ></div>
+				</div>
+			
+				<div id="partie_droite">
+					<div id="b_gauche">
+						<p id=bloc3>Voici les résultats des 15 communes <br>« miroirs » françaises. <br></br>Elles sont calculées par rapport aux trois dernières présidentielles à +/- 2 % d’exactitude, pour les premiers tours.</p> 
+						<p id=bloc4>Faites vous partie de l’une d’entre elles ?</p>
+					</div>
+					
+					<div id="legende"><img src="img/LEGENDE2.png" alt="une fleche" id="img_legende" ></div>
+
+				</div>
+				
+			</article>
+			
+			
+			<!-- FOOTER -->
+            <article class="section" id="footer">
+				<span class="responsive_container">			
+					<h1 id="remerciements">REMERCIEMENTS</h1>
+					<text id="remerciementsText">
+						Nous remercions toutes les personnes nous ayant permis de réaliser ce projet. 
+						<br>En particulier le Hyblab, Ouest Medialab, ainsi que l'Ecole de Design et Polytech Nantes.
+					</text>
+
+					<h1 id="coeur">AU COEUR DE CE PROJET</h1>
+					<img class="photo" id="thomas" src="img/thomas.jpg"/><text class="photo-name" id="thomas-txt">Thomas Blin</text>
+					<img class="photo" id="julie" src="img/julie.jpg"/><text class="photo-name" id="julie-txt">Julie Colliou</text>
+					<img class="photo" id="alizee" src="img/alizee.jpg"/><text class="photo-name" id="alizee-txt">Alizée Parry</text>
+					
+					<img class="photo" id="sandra" src="img/sandra.jpg"/><text class="photo-name" id="sandra-txt">Sandra Escolar</text>
+					<img class="photo" id="yumiao" src="img/yumiao.jpg"/><text class="photo-name" id="yumiao-txt">Yumiao Fu</text>
+					<img class="photo" id="domitie" src="img/domitie.jpg"/><text class="photo-name" id="domitie-txt">Domitie Lavice</text>
+					<img class="photo" id="yinuo" src="img/yinuo.jpg"/><text class="photo-name" id="yinuo-txt">Yinuo Li</text>
+
+					<h1 id="partenaires">PARTENAIRES</h1>                
+                	<a href="http://www.hyblab.fr/"><img class="logo" id="hyblab" src="img/logo_hyblab.png" alt="Hyblab"></a>
+                	<a href="http://www.ouestmedialab.fr/"><img class="logo" id="ouestmedia" src="img/ouestmedialab.png" alt="Ouest Médialab"></a>
+                	<a href="http://www.lecolededesign.com/"><img class="logo" id="design" src="img/design.png" alt="design"></a>
+                	<a href="http://www.univ-nantes.fr/"><img class="logo" id="univ-nantes" src="img/universite.png" alt="Université de Nantes"></a>
+                	<a href="http://www.polytech.univ-nantes.fr/"><img class="logo" id="popo" src="img/polytech.png" alt="Polytech Nantes"></a>
+                	<a href="http://www.rue89strasbourg.com/"><img class="logo" id="rue89" src="img/rue89.png" alt="rue89strasbourg"></a>
+                </span>
+        	</article>
+
+        </section >
+
+
+    </body>
 </html>
