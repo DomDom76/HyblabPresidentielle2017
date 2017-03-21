@@ -42,6 +42,7 @@
 .section {
     color: white;
     /*text-align: center;*/
+    position: relative;
 }
 
 
@@ -479,13 +480,15 @@ ul {
 }
 
 .malegende{
-	display: inline-block;
-	position: relative;
+	display: block;
+	position: absolute;
+    right: 150px;
+    top:100px;
 	width: 20%;
 }
 
 .circle_11 { 
-	position: relative;
+	position: absolute;
     top: 250px;
     left: 600px;
 	margin: auto;
@@ -493,11 +496,11 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility:hidden;
+    
     
 }
 .circle_12 { 
-	position: relative;
+	position: absolute;
     top: 450px;
     left: 700px;
 	margin: auto;
@@ -505,11 +508,11 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility:hidden;
+
     
 }
 .circle_13 { 
-	position: relative;
+	position: absolute;
     top: 350px;
     left: 400px;
 	margin: auto;
@@ -517,11 +520,11 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility:hidden;
+  
     
 }
 .circle_14 { 
-	position: relative;
+	position: absolute;
     top: 200px;
     left: 200px;
 	margin: auto;
@@ -529,11 +532,11 @@ ul {
 	height: 50px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility:hidden;
+   
     
 }
 .circle_15 { 
-	position: relative;
+	position: absolute;
     top: 550px;
     left: 200px;
 	margin: auto;
@@ -541,11 +544,11 @@ ul {
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility:hidden;
+    
     
 }
 .circle_16 { 
-	position: relative;
+	position: absolute;
     top: 200px;
     left: 800px;
 	margin: auto;
@@ -553,12 +556,12 @@ ul {
 	height: 50px;
 	background: #505355 ; 
 	border-radius: 50px; 
-    visibility:hidden;
+    
     
 }
 
 .circle_17 { 
-	position: relative;
+	position: absolute;
     top: 600px;
     left: 800px;
 	margin: auto;
@@ -566,7 +569,7 @@ ul {
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px; 
-    visibility:hidden;
+   
     
 }
 .circle_11:hover { 
@@ -600,53 +603,59 @@ ul {
 
 .imglegende
 {
-    position: relative;
-    margin-top: 40%;
-    width: 80%;
-    height: auto;
+    position: absolute;
+    top:10px;
+    right:10px;
 }
 
 
 #info1
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 30px;
 }
 #info2
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 30px;
 }
 #info3
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 30px;
 }
 #info4
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 50px;
 }
 #info5
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 80px;
 }
 #info6
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 80px;
 }
 #info7
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 80px;
 }
 
