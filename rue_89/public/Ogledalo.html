@@ -28,13 +28,13 @@
 		<script type="text/javascript" src="jquery.ui.combobox.js"></script>
 		<script type="text/javascript" src="js/test13.js"></script>
 		<script type="text/javascript"> 
-			function nextpage() //????????
+			/*function nextpage() //????????
 			{ 
 			var parm1=document.getElementById("cb").value; 
 			var parm2=document.getElementById("chosir_annee").value; 
 			var myurl="communejumelle.html"+"?"+"parm1="+parm1+"&parm2="+parm2; 
 			window.location.assign(myurl); 
-			} 
+			} */
 		</script> 
 		<script type="text/javascript"> 
 
@@ -419,7 +419,7 @@
 	
 	<script type="application/javascript">
 	
-					$(function(){
+					function nextpage(){
 					var parm1=document.getElementById("cb").value; 
 					var parm2=document.getElementById("chosir_annee").value; 
 						$.get('http://127.0.0.1:8081/communejumelle/parm2/parm1').then(function(res){
@@ -439,9 +439,9 @@
 									/*$("#departement".concat(i.toString())).text(res[i-1].COMMUNE);
 									$("#habitangt".concat(i.toString())).text(res[i-1].ANNEE);*/
 								}
-							$(".titrec").text(res[0].ANNEE);
+							//$(".titrec").text(res[0].ANNEE);
 							console.log(res);
 						})
-					})
+					}
 	</script>
 </html>

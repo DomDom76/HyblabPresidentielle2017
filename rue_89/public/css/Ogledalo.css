@@ -500,7 +500,7 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    
+    visibility: hidden;
     
 }
 .circle_12 { 
@@ -512,7 +512,7 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-
+visibility: hidden;
     
 }
 .circle_13 { 
@@ -524,7 +524,7 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-  
+  visibility: hidden
     
 }
 .circle_14 { 
@@ -536,7 +536,7 @@ ul {
 	height: 50px;
 	background: #505355 ; 
 	border-radius: 50px;
-   
+   visibility: hidden;
     
 }
 .circle_15 { 
@@ -548,7 +548,7 @@ ul {
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px;
-    
+    visibility: hidden;
     
 }
 .circle_16 { 
@@ -561,7 +561,7 @@ ul {
 	background: #505355 ; 
 	border-radius: 50px; 
     
-    
+    visibility: hidden;
 }
 
 .circle_17 { 
@@ -573,7 +573,7 @@ ul {
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px; 
-   
+   visibility: hidden;
     
 }
 .circle_11:hover { 
