@@ -3,7 +3,6 @@
     font-family: 'Hans';
     src: url('../font/HANS_KENDRICK/HansKendrick-Regular.otf');
     background-color:#212427;
-    color: white;
 }
 .titrec
 {
@@ -13,25 +12,32 @@
     top: 100px;
     left: 500px;
 }
+.circle{
+	position: relative;
+}
+
+.circle div{
+	position: absolute;
+	top: -200px;
+}
 
 .circle_11 { 
-	position: relative;
+	position: absolute;
     top: 250px;
-    right: 100px;
+    left: 600px;
 	margin: auto;
-	width: 30px; 
-	height: 30px;
+	width: 25px; 
+	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility: hidden;
 }
 .circle_12 { 
 	position: absolute;
     top: 450px;
     left: 700px;
 	margin: auto;
-	width: 30px; 
-	height: 30px;
+	width: 25px; 
+	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
     visibility: hidden;
@@ -41,8 +47,8 @@
     top: 350px;
     left: 400px;
 	margin: auto;
-	width: 30px; 
-	height: 30px;
+	width: 25px; 
+	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
     visibility: hidden;
@@ -50,24 +56,18 @@
 
 .circle_11:hover { 
 	background:red;
-    display: block;
 }
-
-
 .circle_12:hover { 
 	background: red;
-    display: block;
 }
-
 .circle_13:hover { 
 	background: red;
-    display: block;
 }
 
-.circle_14 { 
-	position: relative;
+.circle_2 { 
+	position: absolute;
     top: 200px;
-    right: 500px;
+    left: 200px;
 	margin: auto;
 	width: 50px; 
 	height: 50px;
@@ -76,12 +76,11 @@
     visibility: hidden;
 }
 
-.circle_14:hover { 
+.circle_2:hover { 
 	background: red;
-    display: block;
 }
 
-.circle_15 { 
+.circle_3 { 
 	position: absolute;
     top: 500px;
     left: 300px;
@@ -93,6 +92,7 @@
     visibility: hidden;
 }
 
+<<<<<<< HEAD
 .circle_15:hover { 
 	background: red;
     display: block;
@@ -127,8 +127,10 @@
 }
 
 .circle_17:hover { 
+=======
+.circle_3:hover { 
+>>>>>>> 932cd4498ec5fe9bd2b46bfb6c2dc6c577afce2d
 	background: red;
-    display: block;
 }
 
 .imglegende
@@ -138,40 +140,4 @@
     right: 100px;
     width: 300px;
     height: 300px;
-}
-
-#info4
-{
-    position: relative;
-    left: 80px;
-}
-#info1
-{
-    position: relative;
-    left: 80px;
-}
-#info2
-{
-    position: relative;
-    left: 80px;
-}
-#info3
-{
-    position: relative;
-    left: 80px;
-}
-#info5
-{
-    position: relative;
-    left: 80px;
-}
-#info6
-{
-    position: relative;
-    left: 80px;
-}
-#info7
-{
-    position: relative;
-    left: 80px;
 }

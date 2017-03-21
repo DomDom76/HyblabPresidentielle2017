@@ -218,7 +218,7 @@ body {
 #slide3 h1{
     color:#FFFFFF;
     font-size: 2em;
-    margin-left: 10%
+    margin-left: 10%;
 }
 
 #slide3 hr{
@@ -227,59 +227,41 @@ body {
     left: -37.5%;
 }
 
+.container{
+    width : 100%;
+    height: 100%;
+    display: flex;
+}
+
+
 #deux{
-    margin-left : 1 0%;
-    width: 100%;
-    max-width: 300px;
-    margin: 120px auto 0;
+    position : relative;
+    margin-top: 10%;
+    margin-left: 10%;
 }
-
-ul {
-    list-style: none;
-    margin: 2.3em auto 0;
-    width: 50%;
-    padding: 0;
-    font-size : 1.1em;
-}
-.icon {
-    display: inline-block;
-    width: 1.3em;
-    height: 1.3em;
-    margin-right: 10px;
-}
-
-#PS {
-    color: #F24643;
-}
-#UMP {
-    color: #4EA1D3;
-}
-#FN{
-    color: #000000;
-}
-
-.label {font-size: 1.3em}
-
 
 #sept{
-    margin-left : 1 0%;
-    width: 100%;
-    max-width: 300px;
-    margin: 120px auto 0;
+    position : relative;
+    margin-left: 14%;
+
+}
+
+#douze{
+    position : relative;
+    margin-left: 20%;
+}
+
+.label{
+    display: inline;
+    margin-right: 10%;
 }
 
 ul {
     list-style: none;
-    margin: 2.3em auto 0;
-    width: 50%;
-    padding: 0;
-    font-size : 1.1em;
-}
-.icon {
-    display: inline-block;
-    width: 1.3em;
-    height: 1.3em;
-    margin-right: 10px;
+    font-size : 1.1em;  
+    margin-left: -700%;
+    position: relative;
+    padding-top: 200%;
 }
 
 #PS {
@@ -290,6 +272,10 @@ ul {
 }
 #FN{
     color: #000000;
+}
+
+#Modem{
+    color: #CC6633;
 }
 
 .label {font-size: 1.3em}
@@ -482,14 +468,14 @@ ul {
 
 #remerciements{
 	position: relative;
-	padding-top:5%;
-  text-align: center;
+	padding-top:2%;
+	text-align: center;
 }
 
 #coeur{
 	position: relative;
 	margin-top:5%;
-  text-align: center;
+	text-align: center;
 }
 
 #partenaires{
@@ -514,7 +500,7 @@ ul {
 	border-radius: 50%;
 	padding-top: 3%;
 }
-
+/*
 .photo-name{
 	position: absolute;
 	font-size: 2.5vmin;
@@ -522,6 +508,11 @@ ul {
 	height: 5vmin;
 	text-align: center;
 	margin-top: 8%;
+}
+*/
+
+#nom{
+	height:7%;
 }
 
 @media only screen and (max-width: 1150px){
@@ -549,8 +540,12 @@ ul {
 	}
 }
 
-#thomas, #thomas-txt{
+#thomas{
 	left: 7%;
+}
+
+#thomas-txt{
+	padding-left:7%;
 }
 
 #julie{
@@ -558,7 +553,7 @@ ul {
 }
 
 #julie-txt{
-	Left:20.5%;
+	padding-left:8%;
 }
 
 #alizee{
@@ -566,7 +561,7 @@ ul {
 }
 
 #alizee-txt{
-	Left:34%
+	padding-left:8%
 }
 
 #sandra{
@@ -574,7 +569,7 @@ ul {
 }
 
 #sandra-txt{
-	Left:47.5%
+	padding-left:8%
 }
 
 #yumiao{
@@ -582,7 +577,7 @@ ul {
 }
 
 #yumiao-txt{
-	Left:61.5%
+	padding-left:7.5%
 }
 
 #domitie{
@@ -590,7 +585,7 @@ ul {
 }
 
 #domitie-txt{
-	Left:75%
+	padding-left:8%
 }
 
 #yinuo{
@@ -598,14 +593,17 @@ ul {
 }
 
 #yinuo-txt{
-	Left:88.5%
+	padding-left:8%
 }
 
 /** ----------------Logos---------------- **/
-
+#part{
+	background-color: white;
+	height:20%;
+}
 .logo{
 	position: relative;
-	height: 5%;
+	height: 25%;
 	width: auto;
 	/*border: 1px #333 solid;*/
 	padding-top:3%;
@@ -626,25 +624,25 @@ ul {
 }
 
 #hyblab{
-	left:27%;
+	left:10%;
 }
 
 #ouestmedia{
-	left:35%;
+	left:18%;
 }
 
 #design{
-	left:43%;
+	left:26%;
 }
 
 #univ-nantes{
-	Left:51%;
+	Left:34%;
 }
 
 #popo{
-	Left:59%;
+	Left:42%;
 }
 
 #rue89{
-	Left:67%;
+	Left:50%;
 }

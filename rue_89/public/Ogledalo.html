@@ -17,7 +17,7 @@
         <script src="js/stars.js" defer></script>
         <script src="js/gauge2.js" defer></script>
 		<script src="js/gauge7.js" defer></script>
-		<!-- <script src="js/gauge12.js" defer></script> -->
+		<script src="js/gauge12.js" defer></script>
         <script src="js/main.js" defer></script>		   
 		<script src="js/example.js"></script>
 		
@@ -66,46 +66,31 @@
                 <div class="container" id="deux">
                   <div class="chart">
                     <canvas id="chart-area" width="300" height="300"></canvas>
-                    <div class="chart__legend--color">
-                      <ul>
-                        <li>
-                          <i class="PS" id="PS"></i>
-                          <span class="label" id="PS">Parti Socialiste</span>
-                        </li>
-                        <li>
-                          <i class="UMP"></i>
-                          <span class="label" id="UMP">UMP</span>
-                        </li>
-                        <li>
-                          <i class="FN"></i>
-                          <span class="label" id="FN">Front National</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!-- .chart -->
                 </div>
 
                 <div class="container" id="sept">
                   <div class="chart">
-                    <canvas id="chart-area" width="300" height="300"></canvas>
-                    <div class="chart__legend--color">
-                      <ul>
-                        <li>
-                          <i class="PS" id="PS"></i>
-                          <span class="label" id="PS">Parti Socialiste</span>
-                        </li>
-                        <li>
-                          <i class="UMP"></i>
-                          <span class="label" id="UMP">UMP</span>
-                        </li>
-                        <li>
-                          <i class="Modem"></i>
-                          <span class="label" id="FN">Modem</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!-- .chart -->
+                    <canvas id="chart-area7" width="300" height="300"></canvas>
                 </div>
+                <div class="container" id="douze">
+                  	<div class="chart">
+                    	<canvas id="chart-area12" width="300" height="300"></canvas>
+                	</div>
+                </div>
+                <div class="chart__legend--color" id="partis">
+                    <ul>
+	                    <p id="partis">
+	                      <i class="PS" id="PS"></i>
+	                      <span class="label" id="PS">Parti Socialiste</span>
+	                      <i class="UMP"></i>
+	                      <span class="label" id="UMP">UMP</span>
+	                      <i class="FN"></i>
+	                      <span class="label" id="FN">Front National</span>
+	                      <i id="Modem"></i>
+	                      <span class="label" id="Modem">Modem</span>
+	                    </p>
+	                </ul>
+	            </div>
             </article>
 
 			<!-- SLIDE 4 -->
@@ -236,22 +221,32 @@
 					</text>
 
 					<h1 id="coeur">AU COEUR DE CE PROJET</h1>
-					<img class="photo" id="thomas" src="img/thomas.jpg"/><text class="photo-name" id="thomas-txt">Thomas Blin</text>
-					<img class="photo" id="julie" src="img/julie.jpg"/><text class="photo-name" id="julie-txt">Julie Colliou</text>
-					<img class="photo" id="alizee" src="img/alizee.jpg"/><text class="photo-name" id="alizee-txt">Alizée Parry</text>
-					
-					<img class="photo" id="sandra" src="img/sandra.jpg"/><text class="photo-name" id="sandra-txt">Sandra Escolar</text>
-					<img class="photo" id="yumiao" src="img/yumiao.jpg"/><text class="photo-name" id="yumiao-txt">Yumiao Fu</text>
-					<img class="photo" id="domitie" src="img/domitie.jpg"/><text class="photo-name" id="domitie-txt">Domitie Lavice</text>
-					<img class="photo" id="yinuo" src="img/yinuo.jpg"/><text class="photo-name" id="yinuo-txt">Yinuo Li</text>
-
-					<h1 id="partenaires">PARTENAIRES</h1>                
-                	<a href="http://www.hyblab.fr/"><img class="logo" id="hyblab" src="img/logo_hyblab.png" alt="Hyblab"></a>
-                	<a href="http://www.ouestmedialab.fr/"><img class="logo" id="ouestmedia" src="img/ouestmedialab.png" alt="Ouest Médialab"></a>
-                	<a href="http://www.lecolededesign.com/"><img class="logo" id="design" src="img/design.png" alt="design"></a>
-                	<a href="http://www.univ-nantes.fr/"><img class="logo" id="univ-nantes" src="img/universite.png" alt="Université de Nantes"></a>
-                	<a href="http://www.polytech.univ-nantes.fr/"><img class="logo" id="popo" src="img/polytech.png" alt="Polytech Nantes"></a>
-                	<a href="http://www.rue89strasbourg.com/"><img class="logo" id="rue89" src="img/rue89.png" alt="rue89strasbourg"></a>
+					<img class="photo" id="thomas" src="img/thomas.jpg"/>
+					<img class="photo" id="julie" src="img/julie.jpg"/>
+					<img class="photo" id="alizee" src="img/alizee.jpg"/>
+					<img class="photo" id="sandra" src="img/sandra.jpg"/>
+					<img class="photo" id="yumiao" src="img/yumiao.jpg"/>
+					<img class="photo" id="domitie" src="img/domitie.jpg"/>
+					<img class="photo" id="yinuo" src="img/yinuo.jpg"/>
+	
+					<div id="nom">
+						<text class="photo-name" id="thomas-txt">Thomas Blin</text>
+						<text class="photo-name" id="julie-txt">Julie Colliou</text>
+						<text class="photo-name" id="alizee-txt">Alizée Parry</text>
+						<text class="photo-name" id="sandra-txt">Sandra Escolar</text>
+						<text class="photo-name" id="yumiao-txt">Yumiao Fu</text>
+						<text class="photo-name" id="domitie-txt">Domitie Lavice</text>
+						<text class="photo-name" id="yinuo-txt">Yinuo Li</text>
+					</div>
+					<h1 id="partenaires">PARTENAIRES</h1>   
+					<div id="part">"
+						<a href="http://www.hyblab.fr/"><img class="logo" id="hyblab" src="img/logo_hyblab.png" alt="Hyblab"></a>
+						<a href="http://www.ouestmedialab.fr/"><img class="logo" id="ouestmedia" src="img/ouestmedialab.png" alt="Ouest Médialab"></a>
+						<a href="http://www.lecolededesign.com/"><img class="logo" id="design" src="img/design.png" alt="design"></a>
+						<a href="http://www.univ-nantes.fr/"><img class="logo" id="univ-nantes" src="img/universite.png" alt="Université de Nantes"></a>
+						<a href="http://www.polytech.univ-nantes.fr/"><img class="logo" id="popo" src="img/polytech.png" alt="Polytech Nantes"></a>
+						<a href="http://www.rue89strasbourg.com/"><img class="logo" id="rue89" src="img/rue89.png" alt="rue89strasbourg"></a>
+					</div>
                 </span>
         	</article>
 
