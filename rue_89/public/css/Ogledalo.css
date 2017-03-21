@@ -445,6 +445,205 @@ ul {
 	padding-right: 5%; */
 }
 
+/** ------------------------------------SLIDE 5------------------------------------ **/
+
+#slide5{
+	/*position: absolute;*/
+	width: 100%;
+	height: 100%;
+    background-color: #212427;
+}
+
+#slide5 h1{
+  font-size: 150%;
+}
+
+.titrec
+{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 5%;
+    left: 10%;
+}
+
+.mesjumelles{
+	display: inline-block;
+	position: relative;
+	width: 65%;
+}
+
+.malegende{
+	display: inline-block;
+	position: relative;
+	width: 20%;
+}
+
+.circle_11 { 
+	position: relative;
+    top: 250px;
+    left: 600px;
+	margin: auto;
+	width: 25px; 
+	height: 25px;
+	background: #505355 ; 
+	border-radius: 50px;
+    visibility:hidden;
+    
+}
+.circle_12 { 
+	position: relative;
+    top: 450px;
+    left: 700px;
+	margin: auto;
+	width: 25px; 
+	height: 25px;
+	background: #505355 ; 
+	border-radius: 50px;
+    visibility:hidden;
+    
+}
+.circle_13 { 
+	position: relative;
+    top: 350px;
+    left: 400px;
+	margin: auto;
+	width: 25px; 
+	height: 25px;
+	background: #505355 ; 
+	border-radius: 50px;
+    visibility:hidden;
+    
+}
+.circle_14 { 
+	position: relative;
+    top: 200px;
+    left: 200px;
+	margin: auto;
+	width: 50px; 
+	height: 50px;
+	background: #505355 ; 
+	border-radius: 50px;
+    visibility:hidden;
+    
+}
+.circle_15 { 
+	position: relative;
+    top: 550px;
+    left: 200px;
+	margin: auto;
+	width: 75px; 
+	height: 75px;
+	background: #505355 ; 
+	border-radius: 50px;
+    visibility:hidden;
+    
+}
+.circle_16 { 
+	position: relative;
+    top: 200px;
+    left: 800px;
+	margin: auto;
+	width: 50px; 
+	height: 50px;
+	background: #505355 ; 
+	border-radius: 50px; 
+    visibility:hidden;
+    
+}
+
+.circle_17 { 
+	position: relative;
+    top: 600px;
+    left: 800px;
+	margin: auto;
+	width: 75px; 
+	height: 75px;
+	background: #505355 ; 
+	border-radius: 50px; 
+    visibility:hidden;
+    
+}
+.circle_11:hover { 
+	background:red;
+    display: block;
+}
+.circle_12:hover { 
+	background: red;
+    display: block;
+}
+.circle_13:hover { 
+	background: red;
+    display: block;
+}
+.circle_14:hover { 
+	background: red;
+    display: block;
+}
+.circle_15:hover { 
+	background: red;
+    display: block;
+}
+.circle_16:hover { 
+	background: red;
+    display: block;
+}
+.circle_17:hover { 
+	display: block;
+	background: red;
+}
+
+.imglegende
+{
+    position: relative;
+    margin-top: 40%;
+    width: 80%;
+    height: auto;
+}
+
+
+#info1
+{
+    color: white;
+    position: relative;
+    left: 30px;
+}
+#info2
+{
+    color: white;
+    position: relative;
+    left: 30px;
+}
+#info3
+{
+    color: white;
+    position: relative;
+    left: 30px;
+}
+#info4
+{
+    color: white;
+    position: relative;
+    left: 50px;
+}
+#info5
+{
+    color: white;
+    position: relative;
+    left: 80px;
+}
+#info6
+{
+    color: white;
+    position: relative;
+    left: 80px;
+}
+#info7
+{
+    color: white;
+    position: relative;
+    left: 80px;
+}
 
 
 /** ------------------------------------FOOTER------------------------------------ **/
