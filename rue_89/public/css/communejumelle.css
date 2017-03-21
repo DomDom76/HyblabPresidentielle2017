@@ -12,14 +12,7 @@
     top: 100px;
     left: 500px;
 }
-.circle{
-	position: relative;
-}
 
-.circle div{
-	position: absolute;
-	top: -200px;
-}
 
 .circle_11 { 
 	position: absolute;
@@ -30,6 +23,8 @@
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
+    visibility:hidden;
+    
 }
 .circle_12 { 
 	position: absolute;
@@ -40,7 +35,8 @@
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility: hidden;
+    visibility:hidden;
+    
 }
 .circle_13 { 
 	position: absolute;
@@ -51,20 +47,10 @@
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility: hidden;
+    visibility:hidden;
+    
 }
-
-.circle_11:hover { 
-	background:red;
-}
-.circle_12:hover { 
-	background: red;
-}
-.circle_13:hover { 
-	background: red;
-}
-
-.circle_2 { 
+.circle_14 { 
 	position: absolute;
     top: 200px;
     left: 200px;
@@ -72,30 +58,21 @@
 	width: 50px; 
 	height: 50px;
 	background: #505355 ; 
-	border-radius: 50px; 
-    visibility: hidden;
+	border-radius: 50px;
+    visibility:hidden;
+    
 }
-
-.circle_2:hover { 
-	background: red;
-}
-
-.circle_3 { 
+.circle_15 { 
 	position: absolute;
-    top: 500px;
-    left: 300px;
+    top: 550px;
+    left: 200px;
 	margin: auto;
 	width: 75px; 
 	height: 75px;
 	background: #505355 ; 
-	border-radius: 50px; 
-    visibility: hidden;
-}
-
-<<<<<<< HEAD
-.circle_15:hover { 
-	background: red;
-    display: block;
+	border-radius: 50px;
+    visibility:hidden;
+    
 }
 .circle_16 { 
 	position: absolute;
@@ -106,12 +83,8 @@
 	height: 50px;
 	background: #505355 ; 
 	border-radius: 50px; 
-    visibility: hidden;
-}
-
-.circle_16:hover { 
-	background: red;
-    display: block;
+    visibility:hidden;
+    
 }
 
 .circle_17 { 
@@ -123,13 +96,35 @@
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px; 
-    visibility: hidden;
+    visibility:hidden;
+    
 }
-
+.circle_11:hover { 
+	background:red;
+    display: block;
+}
+.circle_12:hover { 
+	background: red;
+    display: block;
+}
+.circle_13:hover { 
+	background: red;
+    display: block;
+}
+.circle_14:hover { 
+	background: red;
+    display: block;
+}
+.circle_15:hover { 
+	background: red;
+    display: block;
+}
+.circle_16:hover { 
+	background: red;
+    display: block;
+}
 .circle_17:hover { 
-=======
-.circle_3:hover { 
->>>>>>> 932cd4498ec5fe9bd2b46bfb6c2dc6c577afce2d
+display: block;
 	background: red;
 }
 
@@ -140,4 +135,47 @@
     right: 100px;
     width: 300px;
     height: 300px;
+}
+
+#info1
+{
+    color: white;
+    position: absolute;
+    left: 30px;
+}
+#info2
+{
+    color: white;
+    position: absolute;
+    left: 30px;
+}
+#info3
+{
+    color: white;
+    position: absolute;
+    left: 30px;
+}
+#info4
+{
+    color: white;
+    position: absolute;
+    left: 50px;
+}
+#info5
+{
+    color: white;
+    position: absolute;
+    left: 80px;
+}
+#info6
+{
+    color: white;
+    position: absolute;
+    left: 80px;
+}
+#info7
+{
+    color: white;
+    position: absolute;
+    left: 80px;
 }
