@@ -35,8 +35,9 @@ var doughnutData = [
         }
       ];
 
-$(document).ready(function(){
+$(document).ready(function donut(){
   var ctx = $('#chart-area').get(0).getContext("2d");
+  setInterval(donut, 13000);//permet de répéter l'animation
   var myDoughnut = new Chart(ctx).Doughnut(doughnutData,{
       animation: true,
       responsive: true,

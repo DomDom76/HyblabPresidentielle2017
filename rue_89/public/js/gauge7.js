@@ -18,7 +18,7 @@ var doughnutData7 = [
         {
           value: credsPartIV7,
           color:"#E85A71",
-          highlight: "FFFFFF",
+          highlight: "#FFFFFF",
           label: "Ségolène Royal"
         },
         {
@@ -35,8 +35,9 @@ var doughnutData7 = [
         }
       ];
 
-$(document).ready(function(){
+$(document).ready(function donut7(){
   var ctx = $('#chart-area7').get(0).getContext("2d");
+  setInterval(donut7, 12000); //permet de répéter l'animation
   var myDoughnut = new Chart(ctx).Doughnut(doughnutData7,{
       animation:true,
       responsive: true,

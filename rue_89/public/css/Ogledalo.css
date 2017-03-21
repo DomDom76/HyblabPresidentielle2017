@@ -42,6 +42,7 @@
 .section {
     color: white;
     /*text-align: center;*/
+    position: relative;
 }
 
 
@@ -194,6 +195,7 @@ body {
   width: 35%;
   vertical-align: top;
   padding-top: 5%;
+  font-size: 1.2em;
  }
 .whatiscm
 {
@@ -235,7 +237,7 @@ body {
 
 
 #deux{
-    width:15%;
+    width:18%;
 	height:auto;
 	display:inline-block;
 	position : relative;
@@ -249,7 +251,7 @@ body {
 }
 
 #sept{
-	width:15%;
+	width:18%;
 	height:auto;
 	display:inline-block;
     position : relative;
@@ -258,7 +260,7 @@ body {
 }
 
 #douze{
-	width:15%;
+	width:18%;
 	height:auto;
 	display:inline-block;
     position : relative;
@@ -267,6 +269,7 @@ body {
 
 .legende_color{
 	height:20%;
+    font-size: 1.1em;
 }
 
 .label{
@@ -284,7 +287,7 @@ ul {
 }
 
 #PS {
-	padding-Left: 20%;
+	padding-left: 20%;
     color: #F24643;
 }
 #UMP {
@@ -324,6 +327,7 @@ ul {
   padding-right:5%;
   vertical-align: top;
   /*margin-top: 30%;*/
+  font-size: 1.1em;
 }
 
 #titre_gauche{
@@ -423,6 +427,7 @@ ul {
   position: relative;
   width: 20%;
   vertical-align: top;
+  font-size: 1.1em;
  }
  
 
@@ -445,7 +450,7 @@ ul {
 #img_legende{
 	height:auto;
 	width:100%;
-	padding-top: 30%;	
+	padding-top: 20%;	
 	/*padding-left: 10%;
 	padding-right: 5%; */
 }
@@ -479,13 +484,15 @@ ul {
 }
 
 .malegende{
-	display: inline-block;
-	position: relative;
+	display: block;
+	position: absolute;
+    right: 150px;
+    top:100px;
 	width: 20%;
 }
 
 .circle_11 { 
-	position: relative;
+	position: absolute;
     top: 250px;
     left: 600px;
 	margin: auto;
@@ -493,11 +500,11 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility:hidden;
+    
     
 }
 .circle_12 { 
-	position: relative;
+	position: absolute;
     top: 450px;
     left: 700px;
 	margin: auto;
@@ -505,11 +512,11 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility:hidden;
+
     
 }
 .circle_13 { 
-	position: relative;
+	position: absolute;
     top: 350px;
     left: 400px;
 	margin: auto;
@@ -517,11 +524,11 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility:hidden;
+  
     
 }
 .circle_14 { 
-	position: relative;
+	position: absolute;
     top: 200px;
     left: 200px;
 	margin: auto;
@@ -529,11 +536,11 @@ ul {
 	height: 50px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility:hidden;
+   
     
 }
 .circle_15 { 
-	position: relative;
+	position: absolute;
     top: 550px;
     left: 200px;
 	margin: auto;
@@ -541,11 +548,11 @@ ul {
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px;
-    visibility:hidden;
+    
     
 }
 .circle_16 { 
-	position: relative;
+	position: absolute;
     top: 200px;
     left: 800px;
 	margin: auto;
@@ -553,12 +560,12 @@ ul {
 	height: 50px;
 	background: #505355 ; 
 	border-radius: 50px; 
-    visibility:hidden;
+    
     
 }
 
 .circle_17 { 
-	position: relative;
+	position: absolute;
     top: 600px;
     left: 800px;
 	margin: auto;
@@ -566,7 +573,7 @@ ul {
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px; 
-    visibility:hidden;
+   
     
 }
 .circle_11:hover { 
@@ -600,53 +607,59 @@ ul {
 
 .imglegende
 {
-    position: relative;
-    margin-top: 40%;
-    width: 80%;
-    height: auto;
+    position: absolute;
+    top:10px;
+    right:10px;
 }
 
 
 #info1
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 30px;
 }
 #info2
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 30px;
 }
 #info3
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 30px;
 }
 #info4
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 50px;
 }
 #info5
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 80px;
 }
 #info6
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 80px;
 }
 #info7
 {
     color: white;
-    position: relative;
+    position: absolute;
+    top: 10px;
     left: 80px;
 }
 
@@ -655,8 +668,8 @@ ul {
 
  .responsive_container
 {
-  overflow: hidden;
-  width: 100vw; 
+    overflow: hidden;
+    width: 100vw; 
     height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
     max-height: 100vh;
     max-width: 177.78vh; /* 16/9 = 1.778 */
@@ -671,11 +684,12 @@ ul {
 #remerciementsText{
 	position: relative;
 	margin-top:1%;
-  text-align: center;
-  width: auto;
-  height: 100%;
-  top:10%;
-  left:30%;
+    text-align: center;
+    width: auto;
+    height: 100%;
+    top:10%;
+    left:30%;
+    font-size: 1.2em;
 }
 
 @media only screen and (max-width: 845px){
