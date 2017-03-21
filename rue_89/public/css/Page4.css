@@ -32,7 +32,7 @@ h1{
 h1.pos_right{
 	position:relative;
 	right:-900px;
-	bottom:-200px;
+	bottom:-100px;
 }
 img{
 	max-width:400px;
@@ -42,7 +42,7 @@ img{
 img.pos_right{
 	position:relative;
 	right:-500px;
-	bottom:-500px;
+	bottom:-400px;
 }
 h2{
 	text-align:center;

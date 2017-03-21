@@ -21,6 +21,43 @@
         <script src="js/main.js" defer></script>		   
 		<script src="js/example.js"></script>
 		<script src="js/footer.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<link rel="stylesheet"  type="text/css" href ="css/Page4.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="jquery.ui.combobox.js"></script>
+		<script type="text/javascript" src="js/test13.js"></script>
+		<script type="text/javascript"> 
+			function nextpage() //????????
+			{ 
+			var parm1=document.getElementById("cb").value; 
+			var parm2=document.getElementById("chosir_annee").value; 
+			var myurl="communejumelle.html"+"?"+"parm1="+parm1+"&parm2="+parm2; 
+			window.location.assign(myurl); 
+			} 
+		</script> 
+		<script type="text/javascript"> 
+
+			function getparm1() 
+			{ 
+			var url=location.href; 
+			var tmp1=url.split("?")[1]; 
+			var tmp2=tmp1.split("&")[0]; 
+			var tmp3=tmp2.split("=")[1]; 
+			var parm1=tmp3; 
+			//alert(parm1); 
+			} 
+			function getparm2() 
+			{ 
+			var url=location.href; 
+			var tmp1=url.split("?")[1]; 
+			var tmp2=tmp1.split("&")[1]; 
+			var tmp3=tmp2.split("=")[1]; 
+			var parm2=tmp3; 
+			//alert(parm2); 
+			} 
+		</script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
 		
     </head>
 
@@ -202,10 +239,67 @@
 				</div>
 				
 			</article>
+			<!-- SLIDE 4 -->
 			
+			<article class="section" id="slide5">			
+				<div id = "top">
+					<h1 class="pos_right">QU'EST CE QU'UNE COMMUNE JUMELLE<br></br>
+						<p>
+							Les communes « miroir » sont des communes spéciales et <br>uniques. 
+							Elles sont le reflet de la population nationale.</br>
+							Elles peuvent prédire les résultats des votes des élections <br>
+							présidentielles car elles ont + ou - 2% de différence avec</br> les résultats finaux.
+							Un coup de chance ? Non. Sur les trois <br>dernières présidentielles (2002,2007,2012),
+							elles arrivent à obtenir les mêmes</br> résultats et dans le bon ordre. 
+							Tiercé gagnant ! 
+						</p>
+					</h1>
+					<img src="img/jumelle.png" alt="alttext" title="jumelle" style="position:relative;top:-150px; right:-180px">
+				</div>
+				
+				<div id = "bottom">
+					
+						<h2><br></br>
+							Selection ta commune pour voir si une commune jumelle existe.
+						</h2>
+						
+						<div  class="pos_inline">
+							<label for="state" color = "FFFFFF">Chosir ta commune </label>
+							<select class="select" id="cb"></select>
+							<script type="text/javascript" src="js/commune.js"></script>
+							<script type="text/javascript">
+							$().ready(
+							function(){
+								var name =0;
+								$.each(commune_names,function(name,value) {
+								var n = $("<option value = "+value+">"+value+"</option>");
+									$("#cb").append(n)	
+								});
+								$("#cb").combobox();
+							});
+
+							</script>
+							<label for="state" color = "FFFFFF">a l'annee </label>
+						<div class="select">
+							<select name="annee" class="select" id="chosir_annee">
+								<option class="option" value="2002" >2002</option>
+								<option class="option" value="2007" >2007</option>
+								<option class="option" value="2012" >2012</option>
+							</select>
+						</div>
+					<input type="button"><a href="#">***</a>
+					<button type="button" class = "pos_bottom"style = "displat:block" value="to page5" onclick="nextpage()">
+						Recherche
+					</button>
+					</div>
+				</div>
+					
+			</article>		
+	
+   
 			
 			<!-- SLIDE 5 -->
-			<article class="section" id="slide5">
+			<article class="section" id="slide6">
 				<p class="titrec">Voici vos communes jumelles. Allez les voir !</p>
 				
 				<div class="mesjumelles">
@@ -324,8 +418,11 @@
     </body>
 	
 	<script type="application/javascript">
+	
 					$(function(){
-						$.get('http://127.0.0.1:8081/communejumelle').then(function(res){
+					var parm1=document.getElementById("cb").value; 
+					var parm2=document.getElementById("chosir_annee").value; 
+						$.get('http://127.0.0.1:8081/communejumelle/parm2/parm1').then(function(res){
 							//var length =res.length;
 							for(var i=1;i<=res.length;i++)
 								{
