@@ -20,6 +20,7 @@
 		<script src="js/gauge12.js" defer></script>
         <script src="js/main.js" defer></script>		   
 		<script src="js/example.js"></script>
+		<script src="js/footer.js"></script>
 		
     </head>
 
@@ -63,33 +64,25 @@
                 <h1 class="text">Résultats nationaux aux présidentielles</h1>
                 <hr width="5%" color="white">
 
-                <div class="container" id="deux">
-                  <div class="chart">
-                    <canvas id="chart-area" width="300" height="300"></canvas>
-                </div>
-
-                <div class="container" id="sept">
-                  <div class="chart">
-                    <canvas id="chart-area7" width="300" height="300"></canvas>
-                </div>
-                <div class="container" id="douze">
-                  	<div class="chart">
+                <div class="container" >
+					<div class="chart" id="deux">
+						<canvas id="chart-area" width="300" height="300"></canvas>
+					</div>
+             
+					<div class="chart" id="sept">
+						<canvas id="chart-area7" width="300" height="300"></canvas>
+					</div>
+         
+                  	<div class="chart" id="douze">
                     	<canvas id="chart-area12" width="300" height="300"></canvas>
                 	</div>
                 </div>
-                <div class="chart__legend--color" id="partis">
-                    <ul>
-	                    <p id="partis">
-	                      <i class="PS" id="PS"></i>
+				
+                <div class="legende_color" id="partis">
 	                      <span class="label" id="PS">Parti Socialiste</span>
-	                      <i class="UMP"></i>
 	                      <span class="label" id="UMP">UMP</span>
-	                      <i class="FN"></i>
 	                      <span class="label" id="FN">Front National</span>
-	                      <i id="Modem"></i>
 	                      <span class="label" id="Modem">Modem</span>
-	                    </p>
-	                </ul>
 	            </div>
             </article>
 
