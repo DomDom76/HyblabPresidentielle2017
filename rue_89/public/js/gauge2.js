@@ -85,7 +85,6 @@ $(document).ready(function(){
 
       //decrease alpha opacity based on http://jsfiddle.net/dlinx/EhD7J/305/
       
-      
     }
   });
 });
