@@ -437,8 +437,8 @@ ul {
 
  .responsive_container
 {
-    overflow: hidden;
-    width: 100vw; 
+  overflow: hidden;
+  width: 100vw; 
     height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
     max-height: 100vh;
     max-width: 177.78vh; /* 16/9 = 1.778 */
@@ -453,11 +453,11 @@ ul {
 #remerciementsText{
 	position: relative;
 	margin-top:1%;
-    text-align: center;
-    width: auto;
-    height: 100%;
-    top:10%;
-    left:30%;
+  text-align: center;
+  width: auto;
+  height: 100%;
+  top:10%;
+  left:30%;
 }
 
 @media only screen and (max-width: 845px){
@@ -468,14 +468,14 @@ ul {
 
 #remerciements{
 	position: relative;
-	padding-top:5%;
-  text-align: center;
+	padding-top:2%;
+	text-align: center;
 }
 
 #coeur{
 	position: relative;
 	margin-top:5%;
-  text-align: center;
+	text-align: center;
 }
 
 #partenaires{
@@ -500,7 +500,7 @@ ul {
 	border-radius: 50%;
 	padding-top: 3%;
 }
-
+/*
 .photo-name{
 	position: absolute;
 	font-size: 2.5vmin;
@@ -508,6 +508,11 @@ ul {
 	height: 5vmin;
 	text-align: center;
 	margin-top: 8%;
+}
+*/
+
+#nom{
+	height:7%;
 }
 
 @media only screen and (max-width: 1150px){
@@ -535,67 +540,70 @@ ul {
 	}
 }
 
-#titrepolytechnik, #titredesign{
-    margin-left: 50%;
-}
-
-#thomas, #thomas-txt{
+#thomas{
 	left: 7%;
 }
 
+#thomas-txt{
+	padding-left:7%;
+}
+
 #julie{
-	left:15%;
+	Left:15%;
 }
 
 #julie-txt{
-	left:20.5%;
+	padding-left:8%;
 }
 
 #alizee{
-	left:23%;
+	Left:23%;
 }
 
 #alizee-txt{
-	left:34%
+	padding-left:8%
 }
 
 #sandra{
-	left:31%;
+	Left:31%;
 }
 
 #sandra-txt{
-	left:47.5%
+	padding-left:8%
 }
 
 #yumiao{
-	left:39%;
+	Left:39%;
 }
 
 #yumiao-txt{
-	left:61.5%
+	padding-left:7.5%
 }
 
 #domitie{
-	left:47%;
+	Left:47%;
 }
 
 #domitie-txt{
-	left:75%
+	padding-left:8%
 }
 
 #yinuo{
-	left:55%;
+	Left:55%;
 }
 
 #yinuo-txt{
-	left:88.5%
+	padding-left:8%
 }
 
 /** ----------------Logos---------------- **/
-
+#part{
+	background-color: white;
+	height:20%;
+}
 .logo{
 	position: relative;
-	height: 5%;
+	height: 25%;
 	width: auto;
 	/*border: 1px #333 solid;*/
 	padding-top:3%;
@@ -616,25 +624,25 @@ ul {
 }
 
 #hyblab{
-	left:27%;
+	left:10%;
 }
 
 #ouestmedia{
-	left:35%;
+	left:18%;
 }
 
 #design{
-	left:43%;
+	left:26%;
 }
 
 #univ-nantes{
-	Left:51%;
+	Left:34%;
 }
 
 #popo{
-	Left:59%;
+	Left:42%;
 }
 
 #rue89{
-	Left:67%;
+	Left:50%;
 }
