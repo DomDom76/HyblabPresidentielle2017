@@ -12,6 +12,27 @@
   crossorigin="anonymous"></script>
 <script src="semantic/semantic.min.js"></script>
  <script src="js/example.js"></script>
+ <script type="text/javascript"> 
+
+function getparm1() 
+{ 
+var url=location.href; 
+var tmp1=url.split("?")[1]; 
+var tmp2=tmp1.split("&")[0]; 
+var tmp3=tmp2.split("=")[1]; 
+var parm1=tmp3; 
+//alert(parm1); 
+} 
+function getparm2() 
+{ 
+var url=location.href; 
+var tmp1=url.split("?")[1]; 
+var tmp2=tmp1.split("&")[1]; 
+var tmp3=tmp2.split("=")[1]; 
+var parm2=tmp3; 
+//alert(parm2); 
+} 
+</script> 
   </head>
   <body class="bodyc">
   <p class="titrec">Voici vos communes jumelles. Allez les voir !</p>
@@ -79,8 +100,12 @@
  <img src="img/LEGENDE.png" alt="une fleche" id="img_legende" class="imglegende">
   </body>
   <script type="application/javascript">
+  
+	
+	 
     $(function(){
-        $.get('http://127.0.0.1:8081/communejumelle').then(function(res){
+		
+        $.get('http://127.0.0.1:8081/communejumelle/parm2/parm1').then(function(res){
             //var length =res.length;
             for(var i=1;i<=res.length;i++)
                 {
