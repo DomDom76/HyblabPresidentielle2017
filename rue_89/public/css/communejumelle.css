@@ -34,6 +34,7 @@
 	height: 30px;
 	background: #505355 ; 
 	border-radius: 50px;
+    visibility: hidden;
 }
 .circle_13 { 
 	position: absolute;
@@ -44,6 +45,7 @@
 	height: 30px;
 	background: #505355 ; 
 	border-radius: 50px;
+    visibility: hidden;
 }
 
 .circle_11:hover { 
@@ -71,6 +73,7 @@
 	height: 50px;
 	background: #505355 ; 
 	border-radius: 50px; 
+    visibility: hidden;
 }
 
 .circle_14:hover { 
@@ -87,6 +90,7 @@
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px; 
+    visibility: hidden;
 }
 
 .circle_15:hover { 
@@ -102,6 +106,7 @@
 	height: 50px;
 	background: #505355 ; 
 	border-radius: 50px; 
+    visibility: hidden;
 }
 
 .circle_16:hover { 
@@ -118,6 +123,7 @@
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px; 
+    visibility: hidden;
 }
 
 .circle_17:hover { 

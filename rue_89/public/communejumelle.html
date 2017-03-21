@@ -23,8 +23,7 @@
 			XXX
 			</h3>
 			<p id="region1">XXXXX</p>
-			<p id="departement1">XXXXx</p>
-			<p id="habitangt1">1222222</p>
+			
     </div>
 </div>
 
@@ -34,8 +33,7 @@
 			XXX
 			</h3>
 			<p id="region2">XXXXX</p>
-			<p id="departement2">XXXXx</p>
-			<p id="habitangt2">1222222</p>			</div>	
+					</div>	
 </div>
  <div class="circle circle_13" id="c3">
  <div id="info3">
@@ -43,8 +41,7 @@
 			XXX
 			</h3>
 			<p id="region3">XXXXX</p>
-			<p id="departement3">XXXXx</p>
-			<p id="habitangt3">1222222</p>			</div>	
+						</div>	
 </div>
  <div class="circle circle_14" id="c4">						
  <div id="info4">
@@ -52,8 +49,7 @@
 			XXX
 			</h3>
 			<p id="region4">XXXXX</p>
-			<p id="departement4">XXXXx</p>
-			<p id="habitangt4">1222222</p> 			    
+					    
  </div>
 </div>
  <div class="circle circle_15" id="c5">
@@ -62,8 +58,7 @@
 			XXX
 			</h3>
 			<p id="region5">XXXXX</p>
-			<p id="departement5">XXXXx</p>
-			<p id="habitangt5">1222222</p>			</div>	
+					</div>	
 </div>
 <div class="circle circle_16" id="c6">
 <div id="info6">
@@ -71,8 +66,7 @@
 			XXX
 			</h3>
 			<p id="region6">XXXXX</p>
-			<p id="departement6">XXXXx</p>
-			<p id="habitangt6">1222222</p>			</div>		
+						</div>		
 </div>
 <div class="circle circle_17" id="c7">
 <div id="info7">
@@ -80,8 +74,7 @@
 			XXX
 			</h3>
 			<p id="region7">XXXXX</p>
-			<p id="departement7">XXXXx</p>
-			<p id="habitangt7">1222222</p>			</div>		
+						</div>		
 </div>
 </div>
  <img src="img/LEGENDE.png" alt="une fleche" id="img_legende" class="imglegende">
@@ -93,17 +86,17 @@
             for(var i=1;i<=res.length;i++)
                 {
                     $("#c".concat(i.toString())).css("visibility","visible");
-                    if((res[0].ANNEE)<50)              $("#c".concat(i.toString())).css({"width":"30px","height":"30px"});
+                    /*if((res[0].ANNEE)<50)              $("#c".concat(i.toString())).css({"width":"30px","height":"30px"});
                         else if(res[i-1].ANNEE<100)
                         $("#c".concat(i.toString())).css({"width":"50px","height":"50px"});
                         else if(res[i-1].ANNEE<200)
                         $("#c".concat(i.toString())).css({"width":"75px","height":"75px"});
                         else 
-                        $("#c".concat(i.toString())).css({"width":"75px","height":"75px"});
-                    $("#communename".concat(i.toString())).text(res[i-1].ID);
+                        $("#c".concat(i.toString())).css({"width":"75px","height":"75px"});*/
+                    $("#communename".concat(i.toString())).text(res[i-1].COMMUNE);
                     $("#region".concat(i.toString())).text(res[i-1].REGION);
-                    $("#departement".concat(i.toString())).text(res[i-1].COMMUNE);
-                    $("#habitangt".concat(i.toString())).text(res[i-1].ANNEE);
+                    /*$("#departement".concat(i.toString())).text(res[i-1].COMMUNE);
+                    $("#habitangt".concat(i.toString())).text(res[i-1].ANNEE);*/
                 }
             $(".titrec").text(res[0].ANNEE);
             console.log(res);
