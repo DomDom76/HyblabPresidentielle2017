@@ -38,7 +38,7 @@ app.get('/test', function (req, res, next) {
     db.close;
 
 })
-app.get('/cummunejumelle', function(req, res, next){
+app.get('/communejumelle', function(req, res, next){
 	db.all(`select c2.commune,c2.region
 			from communes c1, communes c2
 			where c1.commune="Souclin" and c1.ANNEE="2002"

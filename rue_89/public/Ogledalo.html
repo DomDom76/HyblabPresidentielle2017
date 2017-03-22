@@ -298,7 +298,7 @@
 					</button>
 					-->
 						<a href="#slide6">
-							<button type="button" class = "pos_bottom" style = "displat:block" value="to page6" >
+							<button type="button" class = "pos_bottom" style = "displat:block" value="to page6" onclick="nextpage()">
 								Recherche
 							</button>
 						</a> 
@@ -316,7 +316,7 @@
 						<div class="mesjumelles">
 							<div class="circle circle_11" id="c1">
 								<div id="info1">
-									<h3 id="communename4">
+									<h3 id="communename1">
 											XXX
 									</h3>
 									<p id="region1">XXXXX</p>		
@@ -386,34 +386,7 @@
 					</div>
 				</div>
 					
-					<script type="application/javascript">
-		
-						$(function(){
-						var parm1=document.getElementById("cb").value; 
-						var parm2=document.getElementById("chosir_annee").value; 
-							$.get('http://127.0.0.1:8081/communejumelle/parm2/parm1').then(function(res){
-								//var length =res.length;
-								for(var i=1;i<=res.length;i++)
-									{
-										$("#c".concat(i.toString())).css("visibility","visible");
-										/*if((res[0].ANNEE)<50)              $("#c".concat(i.toString())).css({"width":"30px","height":"30px"});
-											else if(res[i-1].ANNEE<100)
-											$("#c".concat(i.toString())).css({"width":"50px","height":"50px"});
-											else if(res[i-1].ANNEE<200)
-											$("#c".concat(i.toString())).css({"width":"75px","height":"75px"});
-											else 
-											$("#c".concat(i.toString())).css({"width":"75px","height":"75px"});*/
-										$("#communename".concat(i.toString())).text(res[i-1].COMMUNE);
-										$("#region".concat(i.toString())).text(res[i-1].REGION);
-										/*$("#departement".concat(i.toString())).text(res[i-1].COMMUNE);
-										$("#habitangt".concat(i.toString())).text(res[i-1].ANNEE);*/
-									}
-								$(".titrec").text(res[0].ANNEE);
-								console.log(res);
-							})
-						})
-					</script>
-
+					
 			</article>
 			
 			
@@ -467,20 +440,14 @@
 	<script type="application/javascript">
 	
 					function nextpage(){
-					var parm1=document.getElementById("cb").value; 
+					var parm1=encodeURIComponent(document.getElementById("cb").value); 
 					var parm2=document.getElementById("chosir_annee").value; 
-						$.get('http://127.0.0.1:8081/communejumelle/parm2/parm1').then(function(res){
+						$.get('http://127.0.0.1:8081/communejumelle/'+parm2+'/'+parm1).then(function(res){
 							//var length =res.length;
-							for(var i=1;i<=res.length;i++)
+							for(var i=1;i<=7;i++)
 								{
 									$("#c".concat(i.toString())).css("visibility","visible");
-									/*if((res[0].ANNEE)<50)              $("#c".concat(i.toString())).css({"width":"30px","height":"30px"});
-										else if(res[i-1].ANNEE<100)
-										$("#c".concat(i.toString())).css({"width":"50px","height":"50px"});
-										else if(res[i-1].ANNEE<200)
-										$("#c".concat(i.toString())).css({"width":"75px","height":"75px"});
-										else 
-										$("#c".concat(i.toString())).css({"width":"75px","height":"75px"});*/
+									
 									$("#communename".concat(i.toString())).text(res[i-1].COMMUNE);
 									$("#region".concat(i.toString())).text(res[i-1].REGION);
 									/*$("#departement".concat(i.toString())).text(res[i-1].COMMUNE);

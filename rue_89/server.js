@@ -20,7 +20,7 @@ app.get('/test', function (req, res, next) {
 })
 
 
-app.get('/cummunejumelle/:annee/:commune', function(req, res, next){
+app.get('/communejumelle/:annee/:commune', function(req, res, next){
 	
 	db.all(`select c2.commune,c2.region
 			from communes c1, communes c2
