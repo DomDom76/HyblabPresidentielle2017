@@ -7,6 +7,7 @@
 		
 		<!-- CSS -->
         <link rel="stylesheet" href="css/Ogledalo.css" >	
+		<link rel="stylesheet"  type="text/css" href ="css/Page4.css">
 
 		<!-- JS -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
@@ -20,12 +21,10 @@
 		<script src="js/gauge12.js" defer></script>
         <script src="js/main.js" defer></script>		   
 		<script src="js/example.js"></script>
-		<script src="js/footer.js"></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<link rel="stylesheet"  type="text/css" href ="css/Page4.css">
+		
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-		<script type="text/javascript" src="jquery.ui.combobox.js"></script>
 		<script type="text/javascript" src="js/test13.js"></script>
 		<script type="text/javascript"> 
 			function nextpage() //????????
@@ -72,7 +71,8 @@
                 <canvas id="stars" width="300" height="300"></canvas>
                 <div class="container">
                   <div class="arrow">
-                    <img src="http://marcelklacan.com/images/icon.png" alt="" />
+					<img class="arrowtest" src="img/arrow2.png" alt="" />
+                   <!-- <img src="http://marcelklacan.com/images/icon.png" alt="" /> -->
                   </div>
                 </div>   
             </article>
@@ -87,7 +87,9 @@
 					<div class="whatiscm" >
 						<h2 class="titlewhatiscm">QU'EST-CE-QU'UNE COMMUNE MIROIR ?</h2>      
 						<div class="bloc1">
-							<span>Les communes « miroir » sont des communes spéciales et uniques. 
+							<span>
+							<br></br>
+							Les communes « miroir » sont des communes spéciales et uniques. 
 							<br>Elles sont le reflet de la population nationale. Elles peuvent prédire les résultats des votes des élections présidentielles car elles ont + ou - 2% de différence avec les résultats finaux. 
 							<br></br>Un coup de chance ? Non ! 
 							<br></br>Sur les trois dernières présidentielles (2002, 2007, 2012), elles arrivent à obtenir les mêmes résultats et dans le bon ordre. Tiercé gagnant !</span>
@@ -98,8 +100,7 @@
 
 			<!-- SLIDE 3 -->
             <article class="section" id="slide3">
-                <h1 class="text">Résultats nationaux aux présidentielles</h1>
-                <hr width="5%" color="white">
+                <h2>RESULTATS NATIONAUX AUX PRESIDENTIELLES</h2>
 
                 <div class="container" >
 					<div class="chart" id="deux">
@@ -127,7 +128,7 @@
 			<article class="section" id="slide4">
 				<div id="partie_gauche">
 					<div id="titre_gauche">
-						<h1>Qui sont les communes miroirs ?</h1>
+						<h2>QUI SONT LES COMMUNES MIROIRS ?</h2>
 					</div>
 					
 					<div id="graph_gauche">
@@ -225,7 +226,7 @@
 						</div>
 					</div>
 				
-					<div id="fleche"><img src="img/FLECHE.png" alt="une fleche" id="img_fleche" ></div>
+					<img src="img/FLECHE.png" alt="une fleche" id="img_fleche" >
 				</div>
 			
 				<div id="partie_droite">
@@ -239,138 +240,149 @@
 				</div>
 				
 			</article>
-			<!-- SLIDE 4 -->
 			
-			<article class="section" id="slide5">			
-				<div id = "top">
-					<h1 class="pos_right">QU'EST CE QU'UNE COMMUNE JUMELLE<br></br>
-						<p>
-							Les communes « miroir » sont des communes spéciales et <br>uniques. 
-							Elles sont le reflet de la population nationale.</br>
-							Elles peuvent prédire les résultats des votes des élections <br>
-							présidentielles car elles ont + ou - 2% de différence avec</br> les résultats finaux.
-							Un coup de chance ? Non. Sur les trois <br>dernières présidentielles (2002,2007,2012),
-							elles arrivent à obtenir les mêmes</br> résultats et dans le bon ordre. 
-							Tiercé gagnant ! 
-						</p>
-					</h1>
-					<img src="img/jumelle.png" alt="alttext" title="jumelle" style="position:relative;top:-150px; right:-180px">
+			<!-- SLIDE 5 -->
+			
+			<article class="section" id="slide5">
+				<div id="top">
+					<div id="gauche">
+						<img src="img/jumelle.png" id="image_jumelle" alt="alttext" title="jumelle">
+					</div>
+				
+					<div id="droite">
+						<div class="whatiscm" >
+							<h2 class="titlewhatiscm">QU'EST-CE-QU'UNE COMMUNE JUMELLE ?</h2>      
+							<div class="bloc1">
+								<span>
+									<br><br>
+									Les communes jumelles sont des communes ayant les mêmes résultats, dans le même ordre pour les résultats des élections présidentielles. 
+									<br></br>
+									Vous pensiez être unique ?
+									<br></br>
+									Peut être qu’au fin fond de la France, dans une autre région, une commune pense comme vous et a obtenu les mêmes suffrages.
+								</span>
+							</div>
+						</div>
+					</div>
 				</div>
 				
 				<div id = "bottom">
-					
-						<h2><br></br>
-							Selection ta commune pour voir si une commune jumelle existe.
-						</h2>
-						
-						<div  class="pos_inline">
-							<label for="state" color = "FFFFFF">Chosir ta commune </label>
-							<select class="select" id="cb"></select>
-							<script type="text/javascript" src="js/commune.js"></script>
-							<script type="text/javascript">
-							$().ready(
-							function(){
-								var name =0;
-								$.each(commune_names,function(name,value) {
-								var n = $("<option value = "+value+">"+value+"</option>");
-									$("#cb").append(n)	
-								});
-								$("#cb").combobox();
+					<h2 id="titleSelection">SELECTIONNE TA COMMUNE POUR VOIR SI ELLE A UNE JUMELLE !</h2>
+					<div  class="pos_inline">
+						<label for="state" color = "FFFFFF">Choisis ta commune </label>
+						<select class="select" id="cb"></select>
+						<script type="text/javascript" src="js/commune.js"></script>
+						<script type="text/javascript">
+						$().ready(
+						function(){
+							var name =0;
+							$.each(commune_names,function(name,value) {
+							var n = $("<option value = "+value+">"+value+"</option>");
+								$("#cb").append(n)	
 							});
+							$("#cb").combobox();
+						});
 
-							</script>
-							<label for="state" color = "FFFFFF">a l'annee </label>
+						</script>
+						<label for="state" color = "FFFFFF">et l'année </label>
 						<div class="select">
-							<select name="annee" class="select" id="chosir_annee">
-								<option class="option" value="2002" >2002</option>
-								<option class="option" value="2007" >2007</option>
-								<option class="option" value="2012" >2012</option>
-							</select>
+						<select name="annee" class="select" id="chosir_annee">
+							<option class="option" value="2002" >2002</option>
+							<option class="option" value="2007" >2007</option>
+							<option class="option" value="2012" >2012</option>
+						</select>
 						</div>
-					<input type="button"><a href="#">***</a>
 					<button type="button" class = "pos_bottom"style = "displat:block" value="to page5" onclick="nextpage()">
 						Recherche
 					</button>
 					</div>
 				</div>
-					
-			</article>		
-	
-   
+			</article>
 			
-			<!-- SLIDE 5 -->
+			
+			
+			<!-- SLIDE 6 -->
 			<article class="section" id="slide6">
-				<p class="titrec">Voici vos communes jumelles. Allez les voir !</p>
+				<h2>VOICI VOS COMMUNES JUMELLES, ALLEZ LES VOIR !</h2>
 				
-				<!--<div class="mesjumelles">-->
-					<div class="circle circle_11" id="c1">
-						<div id="info1">
-							<h3 id="communename4">
-									XXX
-							</h3>
-							<p id="region1">XXXXX</p>		
-						</div>
-					</div>
+				<div id="partie_gauche2">
 
-					<div class="circle circle_12" id="c2">
-						 <div id="info2">
-								<h3 id="communename2">
+					<div id="mesjumelles">
+						<div class="circle circle_11" id="c1">
+							<div id="info1">
+								<h3 id="communename4">
+										XXX
+								</h3>
+								<p id="region1">XXXXX</p>		
+							</div>
+						</div>
+
+						<div class="circle circle_12" id="c2">
+							 <div id="info2">
+									<h3 id="communename2">
+										XXX
+									</h3>
+									<p id="region2">XXXXX</p>
+							</div>	
+						</div>
+						
+						<div class="circle circle_13" id="c3">
+							<div id="info3">
+								<h3 id="communename3">
 									XXX
 								</h3>
-								<p id="region2">XXXXX</p>
-						</div>	
-					</div>
-					
-					<div class="circle circle_13" id="c3">
-						<div id="info3">
-							<h3 id="communename3">
-								XXX
-							</h3>
-							<p id="region3">XXXXX</p>
-						</div>	
-					</div>
-					
-					<div class="circle circle_14" id="c4">						
-						<div id="info4">
-							<h3 id="communename4">
-								XXX
-							</h3>
-							<p id="region4">XXXXX</p>						
+								<p id="region3">XXXXX</p>
+							</div>	
 						</div>
-					</div>
-					
-					<div class="circle circle_15" id="c5">
-						<div id="info5">
-							<h3 id="communename5">
-								XXX
-							</h3>
-							<p id="region5">XXXXX</p>
-						</div>	
-					</div>
-					
-					<div class="circle circle_16" id="c6">
-						<div id="info6">
-							<h3 id="communename6">
-								XXX
-							</h3>
-							<p id="region6">XXXXX</p>
-						</div>		
-					</div>
-					
-					<div class="circle circle_17" id="c7">
-						<div id="info7">
-							<h3 id="communename7">
-								XXX
-							</h3>
-							<p id="region7">XXXXX</p>
-						</div>		
-
-					</div>
-				<!--</div>-->
-				
-				<div class="malegende">
-					<img src="img/LEGENDE2.png" alt="une fleche" id="img_legende" class="imglegende">
+						
+						<div class="circle circle_14" id="c4">						
+							<div id="info4">
+								<h3 id="communename4">
+									XXX
+								</h3>
+								<p id="region4">XXXXX</p>						
+							</div>
+						</div>
+						
+						<div class="circle circle_15" id="c5">
+							<div id="info5">
+								<h3 id="communename5">
+									XXX
+								</h3>
+								<p id="region5">XXXXX</p>
+							</div>	
+						</div>
+						
+						<div class="circle circle_16" id="c6">
+							<div id="info6">
+								<h3 id="communename6">
+									XXX
+								</h3>
+								<p id="region6">XXXXX</p>
+							</div>		
+						</div>
+						
+						<div class="circle circle_17" id="c7">
+							<div id="info7">
+								<h3 id="communename7">
+									XXX
+								</h3>
+								<p id="region7">XXXXX</p>
+							</div>		
+						</div>
+					</div>	
 				</div>
+				
+			
+				<div id="partie_droite2">
+					<div class="malegende">
+						<img src="img/LEGENDE2.png" alt="une fleche" id="img_legende" class="imglegende">
+					</div>
+				</div>
+					
+
+					
+
 			</article>
 			
 			<!-- FOOTER -->
@@ -400,8 +412,9 @@
 						<text class="photo-name" id="domitie-txt">Domitie Lavice</text>
 						<text class="photo-name" id="yinuo-txt">Yinuo Li</text>
 					</div>
-					<h1 id="partenaires">PARTENAIRES</h1>   
-					<div id="part">"
+					   
+					<div id="part">
+						<h1 id="partenaires">PARTENAIRES</h1>
 						<a href="http://www.hyblab.fr/"><img class="logo" id="hyblab" src="img/logo_hyblab.png" alt="Hyblab"></a>
 						<a href="http://www.ouestmedialab.fr/"><img class="logo" id="ouestmedia" src="img/ouestmedialab.png" alt="Ouest Médialab"></a>
 						<a href="http://www.lecolededesign.com/"><img class="logo" id="design" src="img/design.png" alt="design"></a>
