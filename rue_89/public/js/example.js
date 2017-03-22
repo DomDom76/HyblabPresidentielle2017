@@ -6,5 +6,5 @@ $(function() {
 			$(this).children('div').fadeIn();
 		}, function ( e ) {
 			$(this).children('div').fadeOut();
-		});
+		}, 100);
 });
