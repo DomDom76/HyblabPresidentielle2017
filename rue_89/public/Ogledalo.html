@@ -452,9 +452,9 @@
 	<script type="application/javascript">
 	
 					function nextpage(){
-					var parm1=document.getElementById("cb").value; 
+					var parm1=encodeURIComponent(document.getElementById("cb").value); 
 					var parm2=document.getElementById("chosir_annee").value; 
-						$.get('http://127.0.0.1:8081/communejumelle/parm2/parm1').then(function(res){
+						$.get('http://127.0.0.1:8081/communejumelle/'+parm1+'/'+parm2).then(function(res){
 							//var length =res.length;
 							for(var i=1;i<=res.length;i++)
 								{
