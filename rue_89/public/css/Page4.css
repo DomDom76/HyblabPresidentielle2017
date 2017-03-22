@@ -1,7 +1,4 @@
- *{
-        margin: 0;
-        padding:  0;
-    }
+
 #top{
 	background-color:#1B1E20;
 	width:auto;
@@ -17,18 +14,22 @@
 	text-align:center
 }
 
+#image_jumelle{
+	padding-top:5%;
+}
 
+#titleSelection{
+	padding-top:2%;
+	margin-top: 0%;
+	font-size: 20px;
+}
 
 .pos_inline{
 	position:relative;
 	bottom:-50px;
 }
 
-h1{
-	font-family:Georgia;
-	font-size:20px;
-	color:#FFFFFF
-}
+
 h1.pos_right{
 	position:relative;
 	right:-900px;
@@ -46,13 +47,11 @@ img.pos_right{
 }
 h2{
 	text-align:center;
-	font-family:Futura;
 	font-size:20px;
 	color:#FFFFFF
 }
 h3{
 	text-align:center;
-	font-family:Georgia;
 	font-size:20px;
 }
 

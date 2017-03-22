@@ -87,22 +87,23 @@ body {
 }
 #slide1 h1 {
     text-align: center ;
+	width: 100%;
     animation: apparition 1.5s linear forwards 0s;
     text-transform : uppercase;
     color : #FFFFFF;
     position: absolute;
     top:25%;
     font-size : 5em;
-    margin-left: 28%
+    /*margin-left: 28%*/
 }
 
 #slide1 h2 {
-    /*opacity:0;
-    text-align : center;*/
+    /*opacity:0;*/
+    text-align : center;
+	width: 100%;
     color :#FFFFFF;
     animation: apparition 1.5s linear forwards 1s;
     text-transform : uppercase;
-    margin-left: 35%;
     top:45%;
     position: absolute;
     font-size : 3em;
@@ -117,15 +118,19 @@ body {
     border-left-width: 10px;
     z-index: 1;
 }
-   
+
+
+
 .arrow img {
   position: absolute;
-  margin: 50 auto;
-  /*display: block;*/
-  left :50%;
+  padding-bottom: 2%;
+  display: block;
   top: 80%;
   -webkit-animation: arrow 1s both infinite;
   animation: arrow 1s both infinite;
+  margin-left: 45%;
+  margin-right: 45%;
+  width: 10%;
 }
 
 @-webkit-keyframes arrow {
@@ -194,7 +199,7 @@ body {
   position: relative;
   width: 35%;
   vertical-align: top;
-  padding-top: 5%;
+  padding-top: 0%;
   font-size: 1.2em;
  }
 .whatiscm
@@ -203,7 +208,7 @@ body {
 }
 .titlewhatiscm
 {
-    padding-top: 10%;
+    padding-top: 2%;
 }
  .bloc1
 {
@@ -214,13 +219,13 @@ body {
 /** ------------------------------------SLIDE 3------------------------------------ **/
 #slide3 {
     background-color: #1B1E20;
-    opacity: 20% ;
 }
 
-#slide3 h1{
+#slide3 h2{
     color:#FFFFFF;
-    font-size: 2em;
-    margin-left: 10%;
+    font-size: 20px;
+    margin-top: 0%;
+	padding-top: 2%;
 }
 
 #slide3 hr{
@@ -230,9 +235,9 @@ body {
 }
 
 .container{
-    width : auto%;
+    width : auto;
     height: 70%;
-    /*display: flex;*/
+    
 }
 
 
@@ -241,7 +246,7 @@ body {
 	height:auto;
 	display:inline-block;
 	position : relative;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 10%;
 }
 
@@ -267,9 +272,12 @@ body {
     margin-left: 15%;
 }
 
+
 .legende_color{
 	height:20%;
     font-size: 1.1em;
+	margin-top:2%;
+	padding-bottom:2%;
 }
 
 .label{
@@ -322,6 +330,7 @@ ul {
 #partie_gauche{
   display: inline-block;
   position: relative;
+  height: auto;
   width: 65%;
   padding-left:5%;
   padding-right:5%;
@@ -413,10 +422,11 @@ ul {
 	background: #1B1E20;
 }
 
+
 #img_fleche{
 	position: relative;
-	width:100%;
-	height:100%;
+	min-width:100%;
+	height:auto;
 	padding-top: 5%;
 }
 
@@ -455,46 +465,54 @@ ul {
 	padding-right: 5%; */
 }
 
-/** ------------------------------------SLIDE 5------------------------------------ **/
+/** ------------------------------------SLIDE 6------------------------------------ **/
 
-#slide5{
+#slide6{
 	/*position: absolute;*/
 	width: 100%;
 	height: 100%;
-    background-color: #212427;
+	background-color: #A3A5A7;
+    /*background-color: #212427;*/
 }
 
-#slide5 h1{
-  font-size: 150%;
+#slide6 h2{
+  font-size: 20px;
+  margin-top: 0%;
+  padding-top: 2%;
 }
 
-.titrec
-{
-    color: white;
-    font-size: 30px;
-    position: relative;
-    top: 5%;
-    left: 10%;
+/** ----------------Partie gauche---------------- **/
+
+#partie_gauche2{
+  display: inline-block;
+  position: relative;
+  height: auto;
+  width: 65%;
+  padding-left:5%;
+  padding-right:5%;
+  vertical-align: top;
+  margin-top: 15%;
+  font-size: 1.1em;
 }
 
-.mesjumelles{
-	display: inline-block;
+#mesjumelles{
+	display: flex;
+	margin-top:0%;
+}
+
+.circle{
 	position: relative;
-	width: 65%;
 }
 
-.malegende{
-	display: block;
+.circle div{
 	position: absolute;
-    right: 150px;
-    top:100px;
-	width: 20%;
+	top: -200px;
+	width:300px;
+	height:50px;
 }
 
 .circle_11 { 
-	position: absolute;
-    top: 250px;
-    left: 600px;
+	position: relative;
 	margin: auto;
 	width: 25px; 
 	height: 25px;
@@ -504,9 +522,7 @@ ul {
     
 }
 .circle_12 { 
-	position: absolute;
-    top: 450px;
-    left: 700px;
+	position: relative;
 	margin: auto;
 	width: 25px; 
 	height: 25px;
@@ -516,9 +532,7 @@ visibility: hidden;
     
 }
 .circle_13 { 
-	position: absolute;
-    top: 350px;
-    left: 400px;
+	position: relative;
 	margin: auto;
 	width: 25px; 
 	height: 25px;
@@ -528,9 +542,7 @@ visibility: hidden;
     
 }
 .circle_14 { 
-	position: absolute;
-    top: 200px;
-    left: 200px;
+	position: relative;
 	margin: auto;
 	width: 50px; 
 	height: 50px;
@@ -540,9 +552,7 @@ visibility: hidden;
     
 }
 .circle_15 { 
-	position: absolute;
-    top: 550px;
-    left: 200px;
+	position: relative;
 	margin: auto;
 	width: 75px; 
 	height: 75px;
@@ -552,9 +562,7 @@ visibility: hidden;
     
 }
 .circle_16 { 
-	position: absolute;
-    top: 200px;
-    left: 800px;
+	position: relative;
 	margin: auto;
 	width: 50px; 
 	height: 50px;
@@ -565,9 +573,7 @@ visibility: hidden;
 }
 
 .circle_17 { 
-	position: absolute;
-    top: 600px;
-    left: 800px;
+	position: relative;
 	margin: auto;
 	width: 75px; 
 	height: 75px;
@@ -605,62 +611,72 @@ visibility: hidden;
 	background: red;
 }
 
-.imglegende
-{
-    position: absolute;
-    top:10px;
-    right:10px;
-}
-
-
 #info1
 {
     color: white;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 30px;
 }
 #info2
 {
     color: white;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 30px;
 }
 #info3
 {
     color: white;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 30px;
 }
 #info4
 {
     color: white;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 50px;
 }
 #info5
 {
     color: white;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 80px;
 }
 #info6
 {
     color: white;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 80px;
 }
 #info7
 {
     color: white;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 80px;
+}
+
+/** ----------------Partie droite---------------- **/
+
+#partie_droite2{
+  display: inline-block;
+  position: relative;
+  width: 15%;
+  vertical-align: top;
+  font-size: 1.1em;
+ }
+ 
+#img_legende{
+	height:auto;
+	width:100%;
+	padding-top: 20%;	
+	/*padding-left: 10%;
+	padding-right: 5%; */
 }
 
 
@@ -713,8 +729,9 @@ visibility: hidden;
 #partenaires{
 
 	position: relative;
-	margin-top:5%;
-  text-align: center;
+	padding-top:2%;
+	text-align: center;
+	color: #404345;
 }
 
 @media only screen and (max-width: 845px){
@@ -781,62 +798,63 @@ visibility: hidden;
 }
 
 #julie{
-	Left:15%;
+	Left:14%;
 }
 
 #julie-txt{
-	padding-left:8%;
+	padding-left:7%;
 }
 
 #alizee{
-	Left:23%;
+	Left:21%;
 }
 
 #alizee-txt{
-	padding-left:8%
+	padding-left:7%;
 }
 
 #sandra{
-	Left:31%;
+	Left:28%;
 }
 
 #sandra-txt{
-	padding-left:8%
+	padding-left:7%;
 }
 
 #yumiao{
-	Left:39%;
+	Left:35%;
 }
 
 #yumiao-txt{
-	padding-left:7.5%
+	padding-left:7%;
 }
 
 #domitie{
-	Left:47%;
+	Left:42%;
 }
 
 #domitie-txt{
-	padding-left:8%
+	padding-left:7%;
 }
 
 #yinuo{
-	Left:55%;
+	Left:49%;
 }
 
 #yinuo-txt{
-	padding-left:8%
+	padding-left:7%;
 }
 
 /** ----------------Logos---------------- **/
 #part{
 	background-color: white;
 	height:20%;
+	padding-bottom:5%;
 }
 .logo{
 	position: relative;
-	height: 25%;
-	width: auto;
+	height: auto;
+	width: 7%;
 	/*border: 1px #333 solid;*/
 	padding-top:3%;
 }
