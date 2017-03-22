@@ -37,7 +37,7 @@ var doughnutData12 = [
 
 $(document).ready(function donut12(){
   var ctx = $('#chart-area12').get(0).getContext("2d");
-  setInterval(donut12, 11000); //permet de répéter l'animation
+  setInterval(donut12, 13000); //permet de répéter l'animation
   var myDoughnut = new Chart(ctx).Doughnut(doughnutData12,{
       animation:true,
       responsive: true,
