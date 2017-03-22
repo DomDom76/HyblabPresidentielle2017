@@ -27,13 +27,13 @@
 		<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/test13.js"></script>
 		<script type="text/javascript"> 
-			function nextpage() //????????
+			/*function nextpage() //????????
 			{ 
 			var parm1=document.getElementById("cb").value; 
 			var parm2=document.getElementById("chosir_annee").value; 
 			var myurl="communejumelle.html"+"?"+"parm1="+parm1+"&parm2="+parm2; 
 			window.location.assign(myurl); 
-			} 
+			} */
 		</script> 
 		<script type="text/javascript"> 
 
@@ -63,6 +63,7 @@
     <body>
         
         <section id="fullpage">
+		
        
 			<!-- SLIDE 1 -->
             <article class="section" id="slide1">
@@ -292,9 +293,16 @@
 							<option class="option" value="2012" >2012</option>
 						</select>
 						</div>
+					<!--	
 					<button type="button" class = "pos_bottom"style = "displat:block" value="to page5" onclick="nextpage()">
 						Recherche
 					</button>
+					-->
+						<a href="#slide6">
+							<button type="button" class = "pos_bottom" style = "displat:block" value="to page6" >
+								Recherche
+							</button>
+						</a> 
 					</div>
 				</div>
 			</article>
@@ -304,74 +312,73 @@
 			<!-- SLIDE 6 -->
 			<article class="section" id="slide6">
 				<h2>VOICI VOS COMMUNES JUMELLES, ALLEZ LES VOIR !</h2>
-				
 				<div id="partie_gauche2">
+					
+						<div class="mesjumelles">
+							<div class="circle circle_11" id="c1">
+								<div id="info1">
+									<h3 id="communename4">
+											XXX
+									</h3>
+									<p id="region1">XXXXX</p>		
 
-					<div id="mesjumelles">
-						<div class="circle circle_11" id="c1">
-							<div id="info1">
-								<h3 id="communename4">
-										XXX
-								</h3>
-								<p id="region1">XXXXX</p>		
+								</div>
 							</div>
-						</div>
 
-						<div class="circle circle_12" id="c2">
-							 <div id="info2">
-									<h3 id="communename2">
+							<div class="circle circle_12" id="c2">
+								 <div id="info2">
+										<h3 id="communename2">
+											XXX
+										</h3>
+										<p id="region2">XXXXX</p>
+								</div>	
+							</div>
+								
+							<div class="circle circle_13" id="c3">
+								<div id="info3">
+									<h3 id="communename3">
 										XXX
 									</h3>
-									<p id="region2">XXXXX</p>
-							</div>	
-						</div>
-						
-						<div class="circle circle_13" id="c3">
-							<div id="info3">
-								<h3 id="communename3">
-									XXX
-								</h3>
-								<p id="region3">XXXXX</p>
-							</div>	
-						</div>
-						
-						<div class="circle circle_14" id="c4">						
-							<div id="info4">
-								<h3 id="communename4">
-									XXX
-								</h3>
-								<p id="region4">XXXXX</p>						
+									<p id="region3">XXXXX</p>
+								</div>	
 							</div>
-						</div>
-						
-						<div class="circle circle_15" id="c5">
-							<div id="info5">
-								<h3 id="communename5">
-									XXX
-								</h3>
-								<p id="region5">XXXXX</p>
+								
+							<div class="circle circle_14" id="c4">						
+								<div id="info4">
+									<h3 id="communename4">
+										XXX
+									</h3>
+									<p id="region4">XXXXX</p>						
+								</div>
+							</div>
+							
+							<div class="circle circle_15" id="c5">
+								<div id="info5">
+									<h3 id="communename5">
+										XXX
+									</h3>
+									<p id="region5">XXXXX</p>
+								</div>	
+							</div>
+								
+							<div class="circle circle_16" id="c6">
+								<div id="info6">
+									<h3 id="communename6">
+										XXX
+									</h3>
+									<p id="region6">XXXXX</p>
+								</div>		
+							</div>
+								
+							<div class="circle circle_17" id="c7">
+								<div id="info7">
+									<h3 id="communename7">
+										XXX
+									</h3>
+									<p id="region7">XXXXX</p>
+								</div>		
 							</div>	
 						</div>
-						
-						<div class="circle circle_16" id="c6">
-							<div id="info6">
-								<h3 id="communename6">
-									XXX
-								</h3>
-								<p id="region6">XXXXX</p>
-							</div>		
-						</div>
-						
-						<div class="circle circle_17" id="c7">
-							<div id="info7">
-								<h3 id="communename7">
-									XXX
-								</h3>
-								<p id="region7">XXXXX</p>
-							</div>		
-						</div>
-					</div>	
-				</div>
 				
 			
 				<div id="partie_droite2">
@@ -380,10 +387,37 @@
 					</div>
 				</div>
 					
-
-					
+					<script type="application/javascript">
+		
+						$(function(){
+						var parm1=document.getElementById("cb").value; 
+						var parm2=document.getElementById("chosir_annee").value; 
+							$.get('http://127.0.0.1:8081/communejumelle/parm2/parm1').then(function(res){
+								//var length =res.length;
+								for(var i=1;i<=res.length;i++)
+									{
+										$("#c".concat(i.toString())).css("visibility","visible");
+										/*if((res[0].ANNEE)<50)              $("#c".concat(i.toString())).css({"width":"30px","height":"30px"});
+											else if(res[i-1].ANNEE<100)
+											$("#c".concat(i.toString())).css({"width":"50px","height":"50px"});
+											else if(res[i-1].ANNEE<200)
+											$("#c".concat(i.toString())).css({"width":"75px","height":"75px"});
+											else 
+											$("#c".concat(i.toString())).css({"width":"75px","height":"75px"});*/
+										$("#communename".concat(i.toString())).text(res[i-1].COMMUNE);
+										$("#region".concat(i.toString())).text(res[i-1].REGION);
+										/*$("#departement".concat(i.toString())).text(res[i-1].COMMUNE);
+										$("#habitangt".concat(i.toString())).text(res[i-1].ANNEE);*/
+									}
+								$(".titrec").text(res[0].ANNEE);
+								console.log(res);
+							})
+						})
+					</script>
 
 			</article>
+			
+			
 			
 			<!-- FOOTER -->
             <article class="section" id="footer">
@@ -430,9 +464,10 @@
 
     </body>
 	
+
 	<script type="application/javascript">
 	
-					$(function(){
+					function nextpage(){
 					var parm1=document.getElementById("cb").value; 
 					var parm2=document.getElementById("chosir_annee").value; 
 						$.get('http://127.0.0.1:8081/communejumelle/parm2/parm1').then(function(res){
@@ -452,9 +487,10 @@
 									/*$("#departement".concat(i.toString())).text(res[i-1].COMMUNE);
 									$("#habitangt".concat(i.toString())).text(res[i-1].ANNEE);*/
 								}
-							$(".titrec").text(res[0].ANNEE);
+							//$(".titrec").text(res[0].ANNEE);
 							console.log(res);
 						})
-					})
+					}
 	</script>
+
 </html>

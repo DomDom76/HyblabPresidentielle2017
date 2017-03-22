@@ -518,7 +518,7 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-    
+    visibility: hidden;
     
 }
 .circle_12 { 
@@ -528,7 +528,7 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-
+visibility: hidden;
     
 }
 .circle_13 { 
@@ -538,7 +538,7 @@ ul {
 	height: 25px;
 	background: #505355 ; 
 	border-radius: 50px;
-  
+  visibility: hidden
     
 }
 .circle_14 { 
@@ -548,7 +548,7 @@ ul {
 	height: 50px;
 	background: #505355 ; 
 	border-radius: 50px;
-   
+   visibility: hidden;
     
 }
 .circle_15 { 
@@ -558,7 +558,7 @@ ul {
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px;
-    
+    visibility: hidden;
     
 }
 .circle_16 { 
@@ -569,7 +569,7 @@ ul {
 	background: #505355 ; 
 	border-radius: 50px; 
     
-    
+    visibility: hidden;
 }
 
 .circle_17 { 
@@ -579,7 +579,7 @@ ul {
 	height: 75px;
 	background: #505355 ; 
 	border-radius: 50px; 
-   
+   visibility: hidden;
     
 }
 .circle_11:hover { 
@@ -666,7 +666,7 @@ ul {
 #partie_droite2{
   display: inline-block;
   position: relative;
-  width: 20%;
+  width: 15%;
   vertical-align: top;
   font-size: 1.1em;
  }
@@ -678,9 +678,6 @@ ul {
 	/*padding-left: 10%;
 	padding-right: 5%; */
 }
-
-
-
 
 
 /** ------------------------------------FOOTER------------------------------------ **/
